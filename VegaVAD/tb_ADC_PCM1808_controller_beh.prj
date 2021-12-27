@@ -1,0 +1,3 @@
+verilog work "ADC_PCM1808_controller.v"
+vhdl work "tb_ADC_PCM1808_controller.vhd"
+verilog work "D:/Program/Xilinx/14.7/14.7/ISE_DS/ISE//verilog/src/glbl.v"

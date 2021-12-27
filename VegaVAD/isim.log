@@ -1,0 +1,226 @@
+ISim log file
+Running: D:\Library_Projects_FPGA\VegaVAD\tb_ADC_PCM1808_controller_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 1.00ms
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 1.00ms
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 1.00ms
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 1.00ms
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 1.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 3411093185 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 108
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 281914825 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 108
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 2125488250 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 106
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 1858467075 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 108
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 1048423265 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 108
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 191010955 ns : File "D:/Library_Projects_FPGA/VegaVAD/ADC_PCM1808_controller.v" Line 116
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 142298445 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 109
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 377930880 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 107
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 256960 us : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 107
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 311435155 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 110
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 241417345 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 109
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 194987545 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 109
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 211168885 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 109
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 30032875 ns : File "D:/Library_Projects_FPGA/VegaVAD/ADC_PCM1808_controller.v" Line 53
+# run 10.00s
+Stopped at time : 195638185 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 109
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 394141595 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 109
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 291247010 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 107
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 259753460 ns : File "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" Line 107
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run 10.00s
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 204390745 ns : File "D:/Library_Projects_FPGA/VegaVAD/ADC_PCM1808_controller.v" Line 53

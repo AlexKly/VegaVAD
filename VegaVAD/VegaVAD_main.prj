@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/ClockManager.v"
+verilog work "DAC_PCM5102A_controller.v"
+verilog work "ADC_PCM1808_controller.v"
+verilog work "VegaVAD_main.v"

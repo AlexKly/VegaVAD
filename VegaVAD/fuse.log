@@ -1,0 +1,25 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller_isim_beh.exe" -prj "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller_beh.prj" "work.tb_ADC_PCM1808_controller" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Library_Projects_FPGA/VegaVAD/ADC_PCM1808_controller.v" into library work
+Analyzing Verilog file "D:/Program/Xilinx/14.7/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module glbl
+Compiling module ADC_PCM1808_controller
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package vl_types
+Compiling architecture behavior of entity tb_adc_pcm1808_controller
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Compiled 2 Verilog Units
+Built simulation executable D:/Library_Projects_FPGA/VegaVAD/tb_ADC_PCM1808_controller_isim_beh.exe
+Fuse Memory Usage: 35940 KB
+Fuse CPU Usage: 389 ms

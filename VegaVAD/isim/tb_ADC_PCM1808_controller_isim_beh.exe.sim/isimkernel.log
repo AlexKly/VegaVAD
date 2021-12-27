@@ -1,0 +1,28 @@
+Command line:
+   tb_ADC_PCM1808_controller_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53542
+
+Mon Dec 27 17:00:46 2021
+
+
+ Elaboration Time: 0.171875 sec
+
+ Current Memory Usage: 5817.2 Meg
+
+ Total Signals          : 39
+ Total Nets             : 179
+ Total Signal Drivers   : 30
+ Total Blocks           : 7
+ Total Primitive Blocks : 6
+ Total Processes        : 33
+ Total Traceable Variables  : 39
+ Total Scalar Nets and Variables : 705
+
+ Total Simulation Time: 15.625 sec
+
+ Current Memory Usage: 4716.16 Meg
+
+Mon Dec 27 17:16:13 2021
+
