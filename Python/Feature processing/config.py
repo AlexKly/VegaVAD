@@ -15,6 +15,11 @@ OUTPUT_NAME_TEST = 'test_features'
 CSV_FORMAT = '.csv'
 
 
+# Set dataset params:
+DATASET_TRAIN_SIZE = 1000  # Number of WAVs single class (Total number of files: 3 * DATASET_SIZE) (For train)
+DATASET_VALID_SIZE = 1000  # Number of WAVs single class (Total number of files: 3 * DATASET_SIZE) (For validation)
+
+
 # Set features params:
 SAMPLE_RATE = 16000
 PREEMPHASIS_COEF = 0.97  # Coefficient for pre-processing filter

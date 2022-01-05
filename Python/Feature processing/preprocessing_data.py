@@ -2,6 +2,50 @@ import config
 from config import np, tqdm, librosa, python_speech_features
 
 
+# Cutting dataset for training and test:
+def cuttingDataset(list_files: list, target_list: list, dataset_size: int, is_train: bool):
+    current_size_label_0 = 0
+    current_size_label_1 = 0
+    current_size_label_2 = 0
+    ind_list_files = 0
+    continue_cutting = True
+    cuttung_list_files = list()
+    cutting_target_list = list()
+
+    while continue_cutting:
+
+        if is_train:
+            if target_list[ind_list_files] == 0 and current_size_label_0 < dataset_size:
+                cuttung_list_files.append(list_files[ind_list_files])
+                cutting_target_list.append(target_list[ind_list_files])
+                current_size_label_0 = current_size_label_0 + 1
+            elif target_list[ind_list_files] == 1 and current_size_label_1 < dataset_size:
+                cuttung_list_files.append(list_files[ind_list_files])
+                cutting_target_list.append(target_list[ind_list_files])
+                current_size_label_1 = current_size_label_1 + 1
+            elif target_list[ind_list_files] == 2 and current_size_label_2 < dataset_size:
+                cuttung_list_files.append(list_files[ind_list_files])
+                cutting_target_list.append(target_list[ind_list_files])
+                current_size_label_2 = current_size_label_2 + 1
+
+            ind_list_files = ind_list_files + 1
+
+            if current_size_label_0 + current_size_label_1 + current_size_label_2 == 3 * dataset_size:
+                continue_cutting = False
+        else:
+            cuttung_list_files.append(list_files[ind_list_files])
+
+            ind_list_files = ind_list_files + 1
+
+            if ind_list_files ==  dataset_size:
+                continue_cutting = False
+
+    if is_train:
+        return cuttung_list_files, cutting_target_list
+    else:
+        return cuttung_list_files
+
+
 # Extraction features for each file like a time-series:
 def extractFeaturesTimeSeries(info_wav_file: list, info_target: list, train_cycle: bool) -> np.ndarray:
     # Create massive for stacking features in first step:

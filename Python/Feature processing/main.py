@@ -12,8 +12,17 @@ def main():
     train_info = pd.read_csv(config.HEAD_DIR + config.FILE_TRAIN_INFO)
     train_info_waw_path = train_info['wav_path']
     train_info_target = train_info['target']
+    train_info_waw_path, train_info_target = preprocessing_data.cuttingDataset(list_files=train_info_waw_path,
+                                                                               target_list=train_info_target,
+                                                                               dataset_size=config.DATASET_TRAIN_SIZE,
+                                                                               is_train=True)
+
     test_info = config.pd.read_csv(config.HEAD_DIR + config.FILE_TEST_INFO)
     test_info_wav_path = test_info['wav_path']
+    test_info_wav_path = preprocessing_data.cuttingDataset(list_files=test_info_wav_path,
+                                                           target_list=list(),
+                                                           dataset_size=config.DATASET_VALID_SIZE,
+                                                           is_train=False)
 
     # Processing files:
     features_train_1 = preprocessing_data.extractFeaturesTimeSeries(info_wav_file=train_info_waw_path,
@@ -45,6 +54,9 @@ def main():
     features_test_1.to_csv(config.HEAD_DIR + config.OUTPUT_NAME_TEST + str(1) + config.CSV_FORMAT, header=False, index=False)
     features_train_2.to_csv(config.HEAD_DIR + config.OUTPUT_NAME_TRAIN + str(2) + config.CSV_FORMAT, header=False, index=False)
     features_test_2.to_csv(config.HEAD_DIR + config.OUTPUT_NAME_TEST + str(2) + config.CSV_FORMAT, header=False, index=False)
+
+    print('Done!')
+
 
 
 if __name__ == '__main__':
