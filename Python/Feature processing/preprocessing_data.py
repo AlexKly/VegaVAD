@@ -1,5 +1,5 @@
 import config
-from config import np, tqdm, librosa, python_speech_features
+from config import np, Counter, tqdm, librosa, python_speech_features
 
 
 # Cutting dataset for training and test:
@@ -34,25 +34,20 @@ def cuttingDataset(list_files: list, target_list: list, dataset_size: int, is_tr
                 continue_cutting = False
         else:
             cuttung_list_files.append(list_files[ind_list_files])
+            cutting_target_list.append(target_list[ind_list_files])
 
             ind_list_files = ind_list_files + 1
 
-            if ind_list_files ==  dataset_size:
+            if ind_list_files == dataset_size:
                 continue_cutting = False
 
-    if is_train:
-        return cuttung_list_files, cutting_target_list
-    else:
-        return cuttung_list_files
+    return cuttung_list_files, cutting_target_list
 
 
 # Extraction features for each file like a time-series:
-def extractFeaturesTimeSeries(info_wav_file: list, info_target: list, train_cycle: bool) -> np.ndarray:
+def extractFeaturesTimeSeries(info_wav_file: list, info_target: list) -> np.ndarray:
     # Create massive for stacking features in first step:
-    if train_cycle:
-        dataset_tmp = np.zeros((1, config.NFEATURES + 2))
-    else:
-        dataset_tmp = np.zeros((1, config.NFEATURES + 1))
+    dataset_tmp = np.zeros((1, config.NFEATURES + 2))
 
     for i in tqdm(range(len(info_wav_file))):
         # Load audio file and target:
@@ -77,17 +72,13 @@ def extractFeaturesTimeSeries(info_wav_file: list, info_target: list, train_cycl
         # Merge logfbank and log energy:
         features = np.hstack((feature_logenergy.reshape(feature_logenergy.shape[0], 1), features_logfbank))
 
-        if train_cycle:
-            # Create array of targets:
-            target = info_target[i]
-            markers = np.zeros(features.shape[0])
-            markers[:] = target
+        # Create array of targets:
+        target = info_target[i]
+        markers = np.zeros(features.shape[0])
+        markers[:] = target
 
-            # Merge label and frames and all frames in dataset:
-            dataset_tmp = np.vstack((dataset_tmp, np.hstack((markers.reshape(markers.shape[0], 1), features))))
-        else:
-            # Merge label and frames and all frames in dataset:
-            dataset_tmp = np.vstack((dataset_tmp, features))
+        # Merge label and frames and all frames in dataset:
+        dataset_tmp = np.vstack((dataset_tmp, np.hstack((markers.reshape(markers.shape[0], 1), features))))
 
     # Delete row consist of zeros:
     dataset = dataset_tmp[1:]
@@ -96,7 +87,7 @@ def extractFeaturesTimeSeries(info_wav_file: list, info_target: list, train_cycl
 
 
 # Extraction features for each file like a images:
-def extractFeaturesImages(info_wav_file: list, info_target: list, train_cycle: bool) -> np.ndarray:
+def extractFeaturesImages(info_wav_file: list, info_target: list) -> np.ndarray:
     dataset = list()
 
     for i in tqdm(range(len(info_wav_file))):
@@ -114,23 +105,16 @@ def extractFeaturesImages(info_wav_file: list, info_target: list, train_cycle: b
                                                                  highfreq=None,
                                                                  preemph=config.PREEMPHASIS_COEF)
 
-        if train_cycle:
-            # Create array of targets:
-            target = info_target[i]
-            markers = np.zeros(features_logfbank.shape[0])
-            markers[:] = target
+        # Create array of targets:
+        target = info_target[i]
+        markers = np.zeros(features_logfbank.shape[0])
+        markers[:] = target
 
-        spectrogram_image = np.zeros((config.NFRAMES, config.NFRAMES))
-        spectrogram_image_in_line = np.zeros(config.NFRAMES * config.NFRAMES)
         for j in range(int(np.floor(features_logfbank.shape[0] / config.NFRAMES))):
             spectrogram_image = features_logfbank[j * config.NFRAMES:(j + 1) * config.NFRAMES]
             spectrogram_image_in_line = spectrogram_image.reshape(config.NFRAMES * config.NFRAMES)
-            if train_cycle:
-                label_spectrogram_image = 1 if np.sum(
-                    markers[j * config.NFRAMES:(j + 1) * config.NFRAMES]) > config.NFRAMES / 2 else 0
-                dataset.append((label_spectrogram_image, spectrogram_image_in_line))
-            else:
-                dataset.append(spectrogram_image_in_line)
+            label_spectrogram_image = Counter(markers[j * config.NFRAMES:(j + 1) * config.NFRAMES]).most_common()[0]
+            dataset.append((label_spectrogram_image[0], spectrogram_image_in_line))
 
     dataset = np.array(dataset)
 
