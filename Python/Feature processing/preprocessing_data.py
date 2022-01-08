@@ -1,9 +1,9 @@
 import config
-from config import np, Counter, tqdm, librosa, python_speech_features
+from config import np, Counter, tqdm, wav, resampy, python_speech_features
 
 
 # Cutting dataset for training and test:
-def cuttingDataset(list_files: list, target_list: list, dataset_size: int, is_train: bool):
+def cuttingDataset(list_files: list, target_list: list, dataset_size: int, is_train: bool) -> (list, list):
     current_size_label_0 = 0
     current_size_label_1 = 0
     current_size_label_2 = 0
@@ -51,7 +51,8 @@ def extractFeaturesTimeSeries(info_wav_file: list, info_target: list) -> np.ndar
 
     for i in tqdm(range(len(info_wav_file))):
         # Load audio file and target:
-        sig, sample_rate = librosa.load(config.HEAD_DIR + info_wav_file[i], sr=config.SAMPLE_RATE)
+        (sample_rate, sig) = wav.read(config.HEAD_DIR + info_wav_file[i])
+        sig = resampy.resample(x=sig, sr_orig=sample_rate, sr_new=config.SAMPLE_RATE)
 
         # Extract features:
         features_fbank, feature_energy = python_speech_features.base.fbank(signal=sig,
@@ -92,7 +93,8 @@ def extractFeaturesImages(info_wav_file: list, info_target: list) -> np.ndarray:
 
     for i in tqdm(range(len(info_wav_file))):
         # Load audio file and target:
-        sig, sample_rate = librosa.load(config.HEAD_DIR + info_wav_file[i], sr=config.SAMPLE_RATE)
+        (sample_rate, sig) = wav.read(config.HEAD_DIR + info_wav_file[i])
+        sig = resampy.resample(x=sig, sr_orig=sample_rate, sr_new=config.SAMPLE_RATE)
 
         # Extract logfbank features:
         features_logfbank = python_speech_features.base.logfbank(signal=sig,

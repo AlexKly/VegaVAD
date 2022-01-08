@@ -3,7 +3,8 @@ import pandas as pd
 import numpy as np
 from collections import Counter
 from tqdm import tqdm
-import librosa
+import scipy.io.wavfile as wav
+import resampy
 import python_speech_features
 
 
