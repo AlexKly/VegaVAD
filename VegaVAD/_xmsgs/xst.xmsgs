@@ -17,38 +17,142 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Library_Projects_FPGA\VegaVAD\ADC_PCM1808_controller.v" Line 100: Result of <arg fmt="%d" index="1">6</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">5</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line 73: Assignment to <arg fmt="%s" index="1">tvalid_L_data</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Library_Projects_FPGA\VegaVAD\windowing.v" Line 569: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line 74: Assignment to <arg fmt="%s" index="1">L_data</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="872" delta="new" >"D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 62: Using initial value of <arg fmt="%s" index="1">s_axis_config_tvalid</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line 75: Assignment to <arg fmt="%s" index="1">tvalid_R_data</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 87: Assignment to <arg fmt="%s" index="1">s_axis_config_tready</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line 76: Assignment to <arg fmt="%s" index="1">R_data</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 90: Assignment to <arg fmt="%s" index="1">s_axis_data_tready</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"D:\Library_Projects_FPGA\VegaVAD\DAC_PCM5102A_controller.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">DAC_PCM5102A_controller</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 94: Assignment to <arg fmt="%s" index="1">m_axis_data_tlast</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line 88: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 95: Assignment to <arg fmt="%s" index="1">event_frame_started</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 96: Assignment to <arg fmt="%s" index="1">event_tlast_unexpected</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 97: Assignment to <arg fmt="%s" index="1">event_tlast_missing</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 98: Assignment to <arg fmt="%s" index="1">event_data_in_channel_halt</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 195: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 69: Net &lt;<arg fmt="%s" index="1">s_axis_data_tlast</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Library_Projects_FPGA\VegaVAD\get_features.v" Line 110: Assignment to <arg fmt="%s" index="1">tready_powspectr</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"D:\Library_Projects_FPGA\VegaVAD\get_features.v" Line 111: Assignment to <arg fmt="%s" index="1">powspectr</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line 102: Result of <arg fmt="%d" index="1">21</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">20</arg>-bit target.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v</arg>&quot; line <arg fmt="%s" index="2">48</arg>: Output port &lt;<arg fmt="%s" index="3">LOCKED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pll_clock_manager</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">LC_audio</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">audio_capture</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">r_data</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">RC_audio</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">audio_capture</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">tvalid_r_data</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">tvalid_LC_audio</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">audio_capture</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\get_features.v</arg>&quot; line <arg fmt="%s" index="2">105</arg>: Output port &lt;<arg fmt="%s" index="3">powspectr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft_function</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">tvalid_RC_audio</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">audio_capture</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\get_features.v</arg>&quot; line <arg fmt="%s" index="2">105</arg>: Output port &lt;<arg fmt="%s" index="3">tready_powspectr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">fft_function</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\Pre_emphasis.v</arg>&quot; line <arg fmt="%s" index="2">56</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">multiplier</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\Pre_emphasis.v</arg>&quot; line <arg fmt="%s" index="2">56</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">multiplier</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\Pre_emphasis.v</arg>&quot; line <arg fmt="%s" index="2">70</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\Pre_emphasis.v</arg>&quot; line <arg fmt="%s" index="2">70</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">adder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\windowing.v</arg>&quot; line <arg fmt="%s" index="2">578</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">multiplier</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\windowing.v</arg>&quot; line <arg fmt="%s" index="2">578</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">multiplier</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">82</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_config_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">magnitude_spectrum</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">82</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_data_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">magnitude_spectrum</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">82</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_data_tlast</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">magnitude_spectrum</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">82</arg>: Output port &lt;<arg fmt="%s" index="3">event_frame_started</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">magnitude_spectrum</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">82</arg>: Output port &lt;<arg fmt="%s" index="3">event_tlast_unexpected</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">magnitude_spectrum</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">82</arg>: Output port &lt;<arg fmt="%s" index="3">event_tlast_missing</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">magnitude_spectrum</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">82</arg>: Output port &lt;<arg fmt="%s" index="3">event_data_in_channel_halt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">magnitude_spectrum</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">101</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">power_im_part</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">101</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">power_im_part</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">114</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">power_re_part</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">114</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">power_re_part</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">127</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pow_adder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">127</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">pow_adder</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">140</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">out_mag_spec</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">150</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">m_pow_mag_spec</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">150</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">m_pow_mag_spec</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">163</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">out_pow_spec</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v</arg>&quot; line <arg fmt="%s" index="2">163</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">out_pow_spec</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">s_axis_data_tlast</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="new" > FFs/Latches &lt;<arg fmt="%s" index="1">s_axis_data_tdata</arg>&lt;<arg fmt="%d" index="2">63</arg>:<arg fmt="%d" index="3">32</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">power_spectrum</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_ind[8]_hamming_win_coeffs[511][31]_wide_mux_514_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/cnt_right_channel_audio_bits_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
@@ -63,21 +167,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/cnt_right_channel_audio_bits_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/cnt_left_channel_audio_bits_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/cnt_left_channel_audio_bits_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/cnt_left_channel_audio_bits_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/cnt_left_channel_audio_bits_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/cnt_left_channel_audio_bits_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/tvalid_right_channel_audio_data</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
@@ -155,79 +244,148 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/right_channel_audio_data_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/cnt_NFFT257_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/cnt_NFFT257_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/cnt_NFFT257_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/cnt_NFFT257_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/cnt_NFFT257_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/cnt_NFFT257_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/cnt_NFFT257_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/cnt_NFFT257_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/cnt_NFFT257_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/left_channel_audio_data_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">audio_capture/tvalid_left_channel_audio_data</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/powspectr_tmp_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">logfbank_features/fft_function/tready_powspectr_tmp</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">VegaVAD_main</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cnt_reset_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">VegaVAD_main</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cnt_reset_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">VegaVAD_main</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cnt_reset_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">VegaVAD_main</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">logfbank_features/framing/cnt_frame_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">VegaVAD_main</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2254" delta="new" >Area constraint could not be met for block &lt;<arg fmt="%s" index="1">VegaVAD_main</arg>&gt;, final ratio is <arg fmt="%i" index="2">537</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1336" delta="old" > (*) More than 100% of Device resources are used
 </msg>
 
 </messages>

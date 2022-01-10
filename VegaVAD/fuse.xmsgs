@@ -5,5 +5,83 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/Library_Projects_FPGA/VegaVAD/ipcore_dir/floating_point_mult.v" Line 10439: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/Library_Projects_FPGA/VegaVAD/ipcore_dir/floating_point_add.v" Line 6734: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/Library_Projects_FPGA/VegaVAD/ipcore_dir/fft_block.v" Line 228645: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/Library_Projects_FPGA/VegaVAD/ipcore_dir/floating_point_square_root.v" Line 18934: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/Library_Projects_FPGA/VegaVAD/ipcore_dir/floating_point_div.v" Line 30004: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"D:/Program/Xilinx/14.7/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1570: Element index <arg fmt="%d" index="1">2</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1574: Element index <arg fmt="%d" index="1">3</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1657: Element index <arg fmt="%d" index="1">2</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1661: Element index <arg fmt="%d" index="1">3</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1718: Element index <arg fmt="%d" index="1">2</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1719: Element index <arg fmt="%d" index="1">3</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1770: Element index <arg fmt="%d" index="1">2</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1771: Element index <arg fmt="%d" index="1">3</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1866: Element index <arg fmt="%d" index="1">23</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1867: Element index <arg fmt="%d" index="1">2</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1872: Element index <arg fmt="%d" index="1">31</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1873: Element index <arg fmt="%d" index="1">3</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1976: Element index <arg fmt="%d" index="1">23</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1977: Element index <arg fmt="%d" index="1">2</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1982: Element index <arg fmt="%d" index="1">31</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1983: Element index <arg fmt="%d" index="1">3</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1397: Element index <arg fmt="%d" index="1">2</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1401: Element index <arg fmt="%d" index="1">3</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1483: Element index <arg fmt="%d" index="1">2</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/RAMB8BWER.v" Line 1487: Element index <arg fmt="%d" index="1">3</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
 </messages>
 

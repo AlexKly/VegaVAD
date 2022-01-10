@@ -1,0 +1,28 @@
+Command line:
+   VegaVAD_main_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62004
+
+Mon Jan 10 16:56:57 2022
+
+
+ Elaboration Time: 5.25 sec
+
+ Current Memory Usage: 6566.25 Meg
+
+ Total Signals          : 214300
+ Total Nets             : 149474
+ Total Signal Drivers   : 78920
+ Total Blocks           : 44086
+ Total Primitive Blocks : 36749
+ Total Processes        : 142440
+ Total Traceable Variables  : 89419
+ Total Scalar Nets and Variables : 1106761
+
+ Total Simulation Time: 1450.75 sec
+
+ Current Memory Usage: 5481.82 Meg
+
+Mon Jan 10 17:21:50 2022
+

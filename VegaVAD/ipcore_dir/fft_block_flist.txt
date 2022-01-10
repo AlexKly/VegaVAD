@@ -1,0 +1,20 @@
+# Output products list for <fft_block>
+_xmsgs\pn_parser.xmsgs
+demo_tb\tb_fft_block.vhd
+fft_block.asy
+fft_block.gise
+fft_block.ngc
+fft_block.sym
+fft_block.v
+fft_block.veo
+fft_block.xco
+fft_block.xise
+fft_block\cmodel\xfft_v8_0_bitacc_cmodel_lin.zip
+fft_block\cmodel\xfft_v8_0_bitacc_cmodel_lin64.zip
+fft_block\cmodel\xfft_v8_0_bitacc_cmodel_nt.zip
+fft_block\cmodel\xfft_v8_0_bitacc_cmodel_nt64.zip
+fft_block\doc\ds808_xfft.pdf
+fft_block\doc\xfft_v8_0_readme.txt
+fft_block\doc\xfft_v8_0_vinfo.html
+fft_block_flist.txt
+fft_block_xmdf.tcl

@@ -52,3 +52,4 @@ ClockManager\simulation\timing\vcs_session.tcl
 ClockManager\simulation\timing\wave.do
 ClockManager_flist.txt
 ClockManager_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

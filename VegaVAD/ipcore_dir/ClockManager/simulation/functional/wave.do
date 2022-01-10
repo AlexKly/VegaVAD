@@ -51,10 +51,10 @@ add wave -noupdate -format Literal -radix ascii /ClockManager_tb/test_phase
 add wave -noupdate -divider {Input clocks}
 add wave -noupdate -format Logic /ClockManager_tb/CLK_IN1
 add wave -noupdate -divider {Output clocks}
-add wave -noupdate -format Logic /ClockManager_tb/dut/clk
+add wave -noupdate -format Literal -expand /ClockManager_tb/dut/clk
 add wave -noupdate -divider Status/control
 add wave -noupdate -format Logic /ClockManager_tb/RESET
 add wave -noupdate -format Logic /ClockManager_tb/LOCKED
 add wave -noupdate -divider Counters
 add wave -noupdate -format Literal -radix hexadecimal /ClockManager_tb/COUNT
-add wave -noupdate -format Literal -radix hexadecimal /ClockManager_tb/dut/counter
+add wave -noupdate -format Literal -radix hexadecimal -expand /ClockManager_tb/dut/counter

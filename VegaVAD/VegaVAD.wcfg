@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Library_Projects_FPGA/VegaVAD/VegaVAD_main_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="vegavad_main_tb" />
+            <top_module name="vl_types" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="68" />
+   <wvobject fp_name="divider18" type="divider">
+      <obj_property name="label">Generated audio:</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/clk_50m" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_50m</obj_property>
+      <obj_property name="ObjectShortName">clk_50m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/pcm1808_bck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pcm1808_bck</obj_property>
+      <obj_property name="ObjectShortName">pcm1808_bck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/pcm1808_dout" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pcm1808_dout</obj_property>
+      <obj_property name="ObjectShortName">pcm1808_dout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/pcm1808_lrck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pcm1808_lrck</obj_property>
+      <obj_property name="ObjectShortName">pcm1808_lrck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/pcm1808_fmt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pcm1808_fmt</obj_property>
+      <obj_property name="ObjectShortName">pcm1808_fmt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/pcm1808_md" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pcm1808_md[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pcm1808_md[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/pcm1808_scki" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pcm1808_scki</obj_property>
+      <obj_property name="ObjectShortName">pcm1808_scki</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/past_lrck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">past_lrck</obj_property>
+      <obj_property name="ObjectShortName">past_lrck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/rising_lrck_front" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rising_lrck_front</obj_property>
+      <obj_property name="ObjectShortName">rising_lrck_front</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/falling_lrck_front" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">falling_lrck_front</obj_property>
+      <obj_property name="ObjectShortName">falling_lrck_front</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/past_bck" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">past_bck</obj_property>
+      <obj_property name="ObjectShortName">past_bck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/falling_bck_front" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">falling_bck_front</obj_property>
+      <obj_property name="ObjectShortName">falling_bck_front</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/gen_bits" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gen_bits[23:0]</obj_property>
+      <obj_property name="ObjectShortName">gen_bits[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/shifted_bits" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">shifted_bits[23:0]</obj_property>
+      <obj_property name="ObjectShortName">shifted_bits[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/clk_50m_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_50m_period</obj_property>
+      <obj_property name="ObjectShortName">clk_50m_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/pcm1808_bck_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">pcm1808_bck_period</obj_property>
+      <obj_property name="ObjectShortName">pcm1808_bck_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/pcm1808_lrck_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">pcm1808_lrck_period</obj_property>
+      <obj_property name="ObjectShortName">pcm1808_lrck_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider19" type="divider">
+      <obj_property name="label">Integer 24 to Float 32:</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/Int24_to_Float32/s_axis_a_tvalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axis_a_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_a_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/Int24_to_Float32/m_axis_result_tvalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">m_axis_result_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_result_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/Int24_to_Float32/s_axis_a_tdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axis_a_tdata[23:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_a_tdata[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/Int24_to_Float32/m_axis_result_tdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m_axis_result_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_result_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider24" type="divider">
+      <obj_property name="label">Filtering:</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/pre_filtering/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/pre_filtering/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/pre_filtering/tvalid_input_stream" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tvalid_input_stream</obj_property>
+      <obj_property name="ObjectShortName">tvalid_input_stream</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/pre_filtering/input_stream" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_stream[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_stream[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/pre_filtering/tvalid_filtered_stream" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tvalid_filtered_stream</obj_property>
+      <obj_property name="ObjectShortName">tvalid_filtered_stream</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/pre_filtering/filtered_stream" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">filtered_stream[31:0]</obj_property>
+      <obj_property name="ObjectShortName">filtered_stream[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/pre_filtering/tvalid_res_mult" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tvalid_res_mult</obj_property>
+      <obj_property name="ObjectShortName">tvalid_res_mult</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/pre_filtering/res_mult" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">res_mult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">res_mult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/pre_filtering/tvalid_delayed_sample" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tvalid_delayed_sample</obj_property>
+      <obj_property name="ObjectShortName">tvalid_delayed_sample</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/pre_filtering/delayed_sample" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">delayed_sample[31:0]</obj_property>
+      <obj_property name="ObjectShortName">delayed_sample[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/pre_filtering/PRE_EMPHASIS_COEF" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PRE_EMPHASIS_COEF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PRE_EMPHASIS_COEF[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/pre_filtering/alpha_const" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alpha_const[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alpha_const[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider37" type="divider">
+      <obj_property name="label">Framing:</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/clk_slow" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_slow</obj_property>
+      <obj_property name="ObjectShortName">clk_slow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/clk_fast" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_fast</obj_property>
+      <obj_property name="ObjectShortName">clk_fast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/en_audio_d" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en_audio_d</obj_property>
+      <obj_property name="ObjectShortName">en_audio_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/audio_d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">audio_d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">audio_d[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/stream_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stream_enable</obj_property>
+      <obj_property name="ObjectShortName">stream_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/stream_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">stream_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stream_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/frame_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">frame_in[0:511]</obj_property>
+      <obj_property name="ObjectShortName">frame_in[0:511]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/frame_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">frame_out[0:511]</obj_property>
+      <obj_property name="ObjectShortName">frame_out[0:511]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/en_send" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en_send</obj_property>
+      <obj_property name="ObjectShortName">en_send</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/cnt_frame" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_frame[9:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_frame[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/cnt_frame_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_frame_out[9:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_frame_out[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/cnt_step" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_step[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_step[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/flag_first_enterance" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flag_first_enterance</obj_property>
+      <obj_property name="ObjectShortName">flag_first_enterance</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/stream_enable_temp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stream_enable_temp</obj_property>
+      <obj_property name="ObjectShortName">stream_enable_temp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/frame_length" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">frame_length</obj_property>
+      <obj_property name="ObjectShortName">frame_length</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/framing/frame_step" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">frame_step</obj_property>
+      <obj_property name="ObjectShortName">frame_step</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider55" type="divider">
+      <obj_property name="label">Windowing:</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/tvalid_stream" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tvalid_stream</obj_property>
+      <obj_property name="ObjectShortName">tvalid_stream</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/stream" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">stream[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stream[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/tready_hamm_stream" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tready_hamm_stream</obj_property>
+      <obj_property name="ObjectShortName">tready_hamm_stream</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/hamm_stream" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hamm_stream[31:0]</obj_property>
+      <obj_property name="ObjectShortName">hamm_stream[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/hamming_win_coeffs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hamming_win_coeffs[0:511,31:0]</obj_property>
+      <obj_property name="ObjectShortName">hamming_win_coeffs[0:511,31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/ind" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ind[8:0]</obj_property>
+      <obj_property name="ObjectShortName">ind[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/reg_coeffs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_coeffs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_coeffs[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/tvalid_reg_coeffs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tvalid_reg_coeffs</obj_property>
+      <obj_property name="ObjectShortName">tvalid_reg_coeffs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/stream_temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">stream_temp[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stream_temp[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/tvalid_stream_temp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tvalid_stream_temp</obj_property>
+      <obj_property name="ObjectShortName">tvalid_stream_temp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vegavad_main_tb/uut/logfbank_features/hamming_window/win_length" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">win_length[31:0]</obj_property>
+      <obj_property name="ObjectShortName">win_length[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -110,12 +110,33 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\ipcore_dir\ClockManager.v" into library work
 Parsing module <ClockManager>.
-Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\DAC_PCM5102A_controller.v" into library work
-Parsing module <DAC_PCM5102A_controller>.
+Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\ipcore_dir\floating_point_square_root.v" into library work
+Parsing module <floating_point_square_root>.
+Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\ipcore_dir\floating_point_mult.v" into library work
+Parsing module <floating_point_mult>.
+Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\ipcore_dir\floating_point_div.v" into library work
+Parsing module <floating_point_div>.
+Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\ipcore_dir\floating_point_add.v" into library work
+Parsing module <floating_point_add>.
+Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\ipcore_dir\fft_block.v" into library work
+Parsing module <fft_block>.
+Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\windowing.v" into library work
+Parsing module <windowing>.
+Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\Pre_emphasis.v" into library work
+Parsing module <Pre_emphasis>.
+Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" into library work
+Parsing module <power_spectrum>.
+Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\ipcore_dir\floating_point_int24_to_float32.v" into library work
+Parsing module <floating_point_int24_to_float32>.
+Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\get_features.v" into library work
+Parsing module <get_features>.
 Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\ADC_PCM1808_controller.v" into library work
 Parsing module <ADC_PCM1808_controller>.
 Analyzing Verilog file "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" into library work
 Parsing module <VegaVAD_main>.
+Parsing VHDL file "D:\Library_Projects_FPGA\VegaVAD\get_frames.vhd" into library work
+Parsing entity <get_frames>.
+Parsing architecture <Behavioral> of entity <get_frames>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -136,14 +157,44 @@ Elaborating module <ADC_PCM1808_controller>.
 WARNING:HDLCompiler:413 - "D:\Library_Projects_FPGA\VegaVAD\ADC_PCM1808_controller.v" Line 58: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "D:\Library_Projects_FPGA\VegaVAD\ADC_PCM1808_controller.v" Line 75: Result of 6-bit expression is truncated to fit in 5-bit target.
 WARNING:HDLCompiler:413 - "D:\Library_Projects_FPGA\VegaVAD\ADC_PCM1808_controller.v" Line 100: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line 73: Assignment to tvalid_L_data ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line 74: Assignment to L_data ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line 75: Assignment to tvalid_R_data ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line 76: Assignment to R_data ignored, since the identifier is never used
 
-Elaborating module <DAC_PCM5102A_controller>.
-WARNING:HDLCompiler:1499 - "D:\Library_Projects_FPGA\VegaVAD\DAC_PCM5102A_controller.v" Line 21: Empty module <DAC_PCM5102A_controller> remains a black box.
-WARNING:HDLCompiler:413 - "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line 88: Result of 18-bit expression is truncated to fit in 17-bit target.
+Elaborating module <get_features(CHOOSE_CHANNEL=1'b0,PRE_EMPHASIS_COEF=32'b10111111011110000101000111101100)>.
+
+Elaborating module <floating_point_int24_to_float32>.
+
+Elaborating module <Pre_emphasis(PRE_EMPHASIS_COEF=32'b10111111011110000101000111101100)>.
+
+Elaborating module <floating_point_mult>.
+
+Elaborating module <floating_point_add>.
+Going to vhdl side to elaborate module get_frames
+
+Elaborating entity <get_frames> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+
+Elaborating module <windowing>.
+WARNING:HDLCompiler:413 - "D:\Library_Projects_FPGA\VegaVAD\windowing.v" Line 569: Result of 10-bit expression is truncated to fit in 9-bit target.
+
+Elaborating module <power_spectrum>.
+WARNING:HDLCompiler:872 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 62: Using initial value of s_axis_config_tvalid since it is never assigned
+
+Elaborating module <fft_block>.
+WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 87: Assignment to s_axis_config_tready ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 90: Assignment to s_axis_data_tready ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 94: Assignment to m_axis_data_tlast ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 95: Assignment to event_frame_started ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 96: Assignment to event_tlast_unexpected ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 97: Assignment to event_tlast_missing ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 98: Assignment to event_data_in_channel_halt ignored, since the identifier is never used
+
+Elaborating module <floating_point_square_root>.
+
+Elaborating module <floating_point_div>.
+WARNING:HDLCompiler:413 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 195: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:634 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" Line 69: Net <s_axis_data_tlast> does not have a driver.
+WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\get_features.v" Line 110: Assignment to tready_powspectr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\Library_Projects_FPGA\VegaVAD\get_features.v" Line 111: Assignment to powspectr ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line 102: Result of 21-bit expression is truncated to fit in 20-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -152,17 +203,13 @@ WARNING:HDLCompiler:413 - "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" Line
 Synthesizing Unit <VegaVAD_main>.
     Related source file is "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v".
 INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" line 48: Output port <LOCKED> of the instance <pll_clock_manager> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" line 59: Output port <LC_audio> of the instance <audio_capture> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" line 59: Output port <RC_audio> of the instance <audio_capture> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" line 59: Output port <tvalid_LC_audio> of the instance <audio_capture> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\VegaVAD_main.v" line 59: Output port <tvalid_RC_audio> of the instance <audio_capture> is unconnected or connected to loadless signal.
-    Found 17-bit register for signal <cnt_reset>.
+    Found 20-bit register for signal <cnt_reset>.
     Found 1-bit register for signal <GSR>.
-    Found 17-bit adder for signal <cnt_reset[16]_GND_1_o_add_2_OUT> created at line 88.
-    Found 17-bit comparator greater for signal <PWR_1_o_cnt_reset[16]_LessThan_2_o> created at line 84
+    Found 20-bit adder for signal <cnt_reset[19]_GND_1_o_add_2_OUT> created at line 102.
+    Found 20-bit comparator greater for signal <GND_1_o_cnt_reset[19]_LessThan_2_o> created at line 98
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  18 D-type flip-flop(s).
+	inferred  21 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 Unit <VegaVAD_main> synthesized.
 
@@ -190,24 +237,1165 @@ Synthesizing Unit <ADC_PCM1808_controller>.
 	inferred   2 Multiplexer(s).
 Unit <ADC_PCM1808_controller> synthesized.
 
+Synthesizing Unit <get_features>.
+    Related source file is "D:\Library_Projects_FPGA\VegaVAD\get_features.v".
+        CHOOSE_CHANNEL = 1'b0
+        PRE_EMPHASIS_COEF = 32'b10111111011110000101000111101100
+WARNING:Xst:647 - Input <r_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <tvalid_r_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\get_features.v" line 105: Output port <powspectr> of the instance <fft_function> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\get_features.v" line 105: Output port <tready_powspectr> of the instance <fft_function> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <get_features> synthesized.
+
+Synthesizing Unit <Pre_emphasis>.
+    Related source file is "D:\Library_Projects_FPGA\VegaVAD\Pre_emphasis.v".
+        PRE_EMPHASIS_COEF = 32'b10111111011110000101000111101100
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\Pre_emphasis.v" line 56: Output port <s_axis_a_tready> of the instance <multiplier> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\Pre_emphasis.v" line 56: Output port <s_axis_b_tready> of the instance <multiplier> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\Pre_emphasis.v" line 70: Output port <s_axis_a_tready> of the instance <adder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\Pre_emphasis.v" line 70: Output port <s_axis_b_tready> of the instance <adder> is unconnected or connected to loadless signal.
+    Found 32-bit register for signal <delayed_sample>.
+    Found 1-bit register for signal <tvalid_delayed_sample>.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+Unit <Pre_emphasis> synthesized.
+
+Synthesizing Unit <get_frames>.
+    Related source file is "D:\Library_Projects_FPGA\VegaVAD\get_frames.vhd".
+    Found 32-bit register for signal <frame_in<1>>.
+    Found 32-bit register for signal <frame_in<2>>.
+    Found 32-bit register for signal <frame_in<3>>.
+    Found 32-bit register for signal <frame_in<4>>.
+    Found 32-bit register for signal <frame_in<5>>.
+    Found 32-bit register for signal <frame_in<6>>.
+    Found 32-bit register for signal <frame_in<7>>.
+    Found 32-bit register for signal <frame_in<8>>.
+    Found 32-bit register for signal <frame_in<9>>.
+    Found 32-bit register for signal <frame_in<10>>.
+    Found 32-bit register for signal <frame_in<11>>.
+    Found 32-bit register for signal <frame_in<12>>.
+    Found 32-bit register for signal <frame_in<13>>.
+    Found 32-bit register for signal <frame_in<14>>.
+    Found 32-bit register for signal <frame_in<15>>.
+    Found 32-bit register for signal <frame_in<16>>.
+    Found 32-bit register for signal <frame_in<17>>.
+    Found 32-bit register for signal <frame_in<18>>.
+    Found 32-bit register for signal <frame_in<19>>.
+    Found 32-bit register for signal <frame_in<20>>.
+    Found 32-bit register for signal <frame_in<21>>.
+    Found 32-bit register for signal <frame_in<22>>.
+    Found 32-bit register for signal <frame_in<23>>.
+    Found 32-bit register for signal <frame_in<24>>.
+    Found 32-bit register for signal <frame_in<25>>.
+    Found 32-bit register for signal <frame_in<26>>.
+    Found 32-bit register for signal <frame_in<27>>.
+    Found 32-bit register for signal <frame_in<28>>.
+    Found 32-bit register for signal <frame_in<29>>.
+    Found 32-bit register for signal <frame_in<30>>.
+    Found 32-bit register for signal <frame_in<31>>.
+    Found 32-bit register for signal <frame_in<32>>.
+    Found 32-bit register for signal <frame_in<33>>.
+    Found 32-bit register for signal <frame_in<34>>.
+    Found 32-bit register for signal <frame_in<35>>.
+    Found 32-bit register for signal <frame_in<36>>.
+    Found 32-bit register for signal <frame_in<37>>.
+    Found 32-bit register for signal <frame_in<38>>.
+    Found 32-bit register for signal <frame_in<39>>.
+    Found 32-bit register for signal <frame_in<40>>.
+    Found 32-bit register for signal <frame_in<41>>.
+    Found 32-bit register for signal <frame_in<42>>.
+    Found 32-bit register for signal <frame_in<43>>.
+    Found 32-bit register for signal <frame_in<44>>.
+    Found 32-bit register for signal <frame_in<45>>.
+    Found 32-bit register for signal <frame_in<46>>.
+    Found 32-bit register for signal <frame_in<47>>.
+    Found 32-bit register for signal <frame_in<48>>.
+    Found 32-bit register for signal <frame_in<49>>.
+    Found 32-bit register for signal <frame_in<50>>.
+    Found 32-bit register for signal <frame_in<51>>.
+    Found 32-bit register for signal <frame_in<52>>.
+    Found 32-bit register for signal <frame_in<53>>.
+    Found 32-bit register for signal <frame_in<54>>.
+    Found 32-bit register for signal <frame_in<55>>.
+    Found 32-bit register for signal <frame_in<56>>.
+    Found 32-bit register for signal <frame_in<57>>.
+    Found 32-bit register for signal <frame_in<58>>.
+    Found 32-bit register for signal <frame_in<59>>.
+    Found 32-bit register for signal <frame_in<60>>.
+    Found 32-bit register for signal <frame_in<61>>.
+    Found 32-bit register for signal <frame_in<62>>.
+    Found 32-bit register for signal <frame_in<63>>.
+    Found 32-bit register for signal <frame_in<64>>.
+    Found 32-bit register for signal <frame_in<65>>.
+    Found 32-bit register for signal <frame_in<66>>.
+    Found 32-bit register for signal <frame_in<67>>.
+    Found 32-bit register for signal <frame_in<68>>.
+    Found 32-bit register for signal <frame_in<69>>.
+    Found 32-bit register for signal <frame_in<70>>.
+    Found 32-bit register for signal <frame_in<71>>.
+    Found 32-bit register for signal <frame_in<72>>.
+    Found 32-bit register for signal <frame_in<73>>.
+    Found 32-bit register for signal <frame_in<74>>.
+    Found 32-bit register for signal <frame_in<75>>.
+    Found 32-bit register for signal <frame_in<76>>.
+    Found 32-bit register for signal <frame_in<77>>.
+    Found 32-bit register for signal <frame_in<78>>.
+    Found 32-bit register for signal <frame_in<79>>.
+    Found 32-bit register for signal <frame_in<80>>.
+    Found 32-bit register for signal <frame_in<81>>.
+    Found 32-bit register for signal <frame_in<82>>.
+    Found 32-bit register for signal <frame_in<83>>.
+    Found 32-bit register for signal <frame_in<84>>.
+    Found 32-bit register for signal <frame_in<85>>.
+    Found 32-bit register for signal <frame_in<86>>.
+    Found 32-bit register for signal <frame_in<87>>.
+    Found 32-bit register for signal <frame_in<88>>.
+    Found 32-bit register for signal <frame_in<89>>.
+    Found 32-bit register for signal <frame_in<90>>.
+    Found 32-bit register for signal <frame_in<91>>.
+    Found 32-bit register for signal <frame_in<92>>.
+    Found 32-bit register for signal <frame_in<93>>.
+    Found 32-bit register for signal <frame_in<94>>.
+    Found 32-bit register for signal <frame_in<95>>.
+    Found 32-bit register for signal <frame_in<96>>.
+    Found 32-bit register for signal <frame_in<97>>.
+    Found 32-bit register for signal <frame_in<98>>.
+    Found 32-bit register for signal <frame_in<99>>.
+    Found 32-bit register for signal <frame_in<100>>.
+    Found 32-bit register for signal <frame_in<101>>.
+    Found 32-bit register for signal <frame_in<102>>.
+    Found 32-bit register for signal <frame_in<103>>.
+    Found 32-bit register for signal <frame_in<104>>.
+    Found 32-bit register for signal <frame_in<105>>.
+    Found 32-bit register for signal <frame_in<106>>.
+    Found 32-bit register for signal <frame_in<107>>.
+    Found 32-bit register for signal <frame_in<108>>.
+    Found 32-bit register for signal <frame_in<109>>.
+    Found 32-bit register for signal <frame_in<110>>.
+    Found 32-bit register for signal <frame_in<111>>.
+    Found 32-bit register for signal <frame_in<112>>.
+    Found 32-bit register for signal <frame_in<113>>.
+    Found 32-bit register for signal <frame_in<114>>.
+    Found 32-bit register for signal <frame_in<115>>.
+    Found 32-bit register for signal <frame_in<116>>.
+    Found 32-bit register for signal <frame_in<117>>.
+    Found 32-bit register for signal <frame_in<118>>.
+    Found 32-bit register for signal <frame_in<119>>.
+    Found 32-bit register for signal <frame_in<120>>.
+    Found 32-bit register for signal <frame_in<121>>.
+    Found 32-bit register for signal <frame_in<122>>.
+    Found 32-bit register for signal <frame_in<123>>.
+    Found 32-bit register for signal <frame_in<124>>.
+    Found 32-bit register for signal <frame_in<125>>.
+    Found 32-bit register for signal <frame_in<126>>.
+    Found 32-bit register for signal <frame_in<127>>.
+    Found 32-bit register for signal <frame_in<128>>.
+    Found 32-bit register for signal <frame_in<129>>.
+    Found 32-bit register for signal <frame_in<130>>.
+    Found 32-bit register for signal <frame_in<131>>.
+    Found 32-bit register for signal <frame_in<132>>.
+    Found 32-bit register for signal <frame_in<133>>.
+    Found 32-bit register for signal <frame_in<134>>.
+    Found 32-bit register for signal <frame_in<135>>.
+    Found 32-bit register for signal <frame_in<136>>.
+    Found 32-bit register for signal <frame_in<137>>.
+    Found 32-bit register for signal <frame_in<138>>.
+    Found 32-bit register for signal <frame_in<139>>.
+    Found 32-bit register for signal <frame_in<140>>.
+    Found 32-bit register for signal <frame_in<141>>.
+    Found 32-bit register for signal <frame_in<142>>.
+    Found 32-bit register for signal <frame_in<143>>.
+    Found 32-bit register for signal <frame_in<144>>.
+    Found 32-bit register for signal <frame_in<145>>.
+    Found 32-bit register for signal <frame_in<146>>.
+    Found 32-bit register for signal <frame_in<147>>.
+    Found 32-bit register for signal <frame_in<148>>.
+    Found 32-bit register for signal <frame_in<149>>.
+    Found 32-bit register for signal <frame_in<150>>.
+    Found 32-bit register for signal <frame_in<151>>.
+    Found 32-bit register for signal <frame_in<152>>.
+    Found 32-bit register for signal <frame_in<153>>.
+    Found 32-bit register for signal <frame_in<154>>.
+    Found 32-bit register for signal <frame_in<155>>.
+    Found 32-bit register for signal <frame_in<156>>.
+    Found 32-bit register for signal <frame_in<157>>.
+    Found 32-bit register for signal <frame_in<158>>.
+    Found 32-bit register for signal <frame_in<159>>.
+    Found 32-bit register for signal <frame_in<160>>.
+    Found 32-bit register for signal <frame_in<161>>.
+    Found 32-bit register for signal <frame_in<162>>.
+    Found 32-bit register for signal <frame_in<163>>.
+    Found 32-bit register for signal <frame_in<164>>.
+    Found 32-bit register for signal <frame_in<165>>.
+    Found 32-bit register for signal <frame_in<166>>.
+    Found 32-bit register for signal <frame_in<167>>.
+    Found 32-bit register for signal <frame_in<168>>.
+    Found 32-bit register for signal <frame_in<169>>.
+    Found 32-bit register for signal <frame_in<170>>.
+    Found 32-bit register for signal <frame_in<171>>.
+    Found 32-bit register for signal <frame_in<172>>.
+    Found 32-bit register for signal <frame_in<173>>.
+    Found 32-bit register for signal <frame_in<174>>.
+    Found 32-bit register for signal <frame_in<175>>.
+    Found 32-bit register for signal <frame_in<176>>.
+    Found 32-bit register for signal <frame_in<177>>.
+    Found 32-bit register for signal <frame_in<178>>.
+    Found 32-bit register for signal <frame_in<179>>.
+    Found 32-bit register for signal <frame_in<180>>.
+    Found 32-bit register for signal <frame_in<181>>.
+    Found 32-bit register for signal <frame_in<182>>.
+    Found 32-bit register for signal <frame_in<183>>.
+    Found 32-bit register for signal <frame_in<184>>.
+    Found 32-bit register for signal <frame_in<185>>.
+    Found 32-bit register for signal <frame_in<186>>.
+    Found 32-bit register for signal <frame_in<187>>.
+    Found 32-bit register for signal <frame_in<188>>.
+    Found 32-bit register for signal <frame_in<189>>.
+    Found 32-bit register for signal <frame_in<190>>.
+    Found 32-bit register for signal <frame_in<191>>.
+    Found 32-bit register for signal <frame_in<192>>.
+    Found 32-bit register for signal <frame_in<193>>.
+    Found 32-bit register for signal <frame_in<194>>.
+    Found 32-bit register for signal <frame_in<195>>.
+    Found 32-bit register for signal <frame_in<196>>.
+    Found 32-bit register for signal <frame_in<197>>.
+    Found 32-bit register for signal <frame_in<198>>.
+    Found 32-bit register for signal <frame_in<199>>.
+    Found 32-bit register for signal <frame_in<200>>.
+    Found 32-bit register for signal <frame_in<201>>.
+    Found 32-bit register for signal <frame_in<202>>.
+    Found 32-bit register for signal <frame_in<203>>.
+    Found 32-bit register for signal <frame_in<204>>.
+    Found 32-bit register for signal <frame_in<205>>.
+    Found 32-bit register for signal <frame_in<206>>.
+    Found 32-bit register for signal <frame_in<207>>.
+    Found 32-bit register for signal <frame_in<208>>.
+    Found 32-bit register for signal <frame_in<209>>.
+    Found 32-bit register for signal <frame_in<210>>.
+    Found 32-bit register for signal <frame_in<211>>.
+    Found 32-bit register for signal <frame_in<212>>.
+    Found 32-bit register for signal <frame_in<213>>.
+    Found 32-bit register for signal <frame_in<214>>.
+    Found 32-bit register for signal <frame_in<215>>.
+    Found 32-bit register for signal <frame_in<216>>.
+    Found 32-bit register for signal <frame_in<217>>.
+    Found 32-bit register for signal <frame_in<218>>.
+    Found 32-bit register for signal <frame_in<219>>.
+    Found 32-bit register for signal <frame_in<220>>.
+    Found 32-bit register for signal <frame_in<221>>.
+    Found 32-bit register for signal <frame_in<222>>.
+    Found 32-bit register for signal <frame_in<223>>.
+    Found 32-bit register for signal <frame_in<224>>.
+    Found 32-bit register for signal <frame_in<225>>.
+    Found 32-bit register for signal <frame_in<226>>.
+    Found 32-bit register for signal <frame_in<227>>.
+    Found 32-bit register for signal <frame_in<228>>.
+    Found 32-bit register for signal <frame_in<229>>.
+    Found 32-bit register for signal <frame_in<230>>.
+    Found 32-bit register for signal <frame_in<231>>.
+    Found 32-bit register for signal <frame_in<232>>.
+    Found 32-bit register for signal <frame_in<233>>.
+    Found 32-bit register for signal <frame_in<234>>.
+    Found 32-bit register for signal <frame_in<235>>.
+    Found 32-bit register for signal <frame_in<236>>.
+    Found 32-bit register for signal <frame_in<237>>.
+    Found 32-bit register for signal <frame_in<238>>.
+    Found 32-bit register for signal <frame_in<239>>.
+    Found 32-bit register for signal <frame_in<240>>.
+    Found 32-bit register for signal <frame_in<241>>.
+    Found 32-bit register for signal <frame_in<242>>.
+    Found 32-bit register for signal <frame_in<243>>.
+    Found 32-bit register for signal <frame_in<244>>.
+    Found 32-bit register for signal <frame_in<245>>.
+    Found 32-bit register for signal <frame_in<246>>.
+    Found 32-bit register for signal <frame_in<247>>.
+    Found 32-bit register for signal <frame_in<248>>.
+    Found 32-bit register for signal <frame_in<249>>.
+    Found 32-bit register for signal <frame_in<250>>.
+    Found 32-bit register for signal <frame_in<251>>.
+    Found 32-bit register for signal <frame_in<252>>.
+    Found 32-bit register for signal <frame_in<253>>.
+    Found 32-bit register for signal <frame_in<254>>.
+    Found 32-bit register for signal <frame_in<255>>.
+    Found 32-bit register for signal <frame_in<256>>.
+    Found 32-bit register for signal <frame_in<257>>.
+    Found 32-bit register for signal <frame_in<258>>.
+    Found 32-bit register for signal <frame_in<259>>.
+    Found 32-bit register for signal <frame_in<260>>.
+    Found 32-bit register for signal <frame_in<261>>.
+    Found 32-bit register for signal <frame_in<262>>.
+    Found 32-bit register for signal <frame_in<263>>.
+    Found 32-bit register for signal <frame_in<264>>.
+    Found 32-bit register for signal <frame_in<265>>.
+    Found 32-bit register for signal <frame_in<266>>.
+    Found 32-bit register for signal <frame_in<267>>.
+    Found 32-bit register for signal <frame_in<268>>.
+    Found 32-bit register for signal <frame_in<269>>.
+    Found 32-bit register for signal <frame_in<270>>.
+    Found 32-bit register for signal <frame_in<271>>.
+    Found 32-bit register for signal <frame_in<272>>.
+    Found 32-bit register for signal <frame_in<273>>.
+    Found 32-bit register for signal <frame_in<274>>.
+    Found 32-bit register for signal <frame_in<275>>.
+    Found 32-bit register for signal <frame_in<276>>.
+    Found 32-bit register for signal <frame_in<277>>.
+    Found 32-bit register for signal <frame_in<278>>.
+    Found 32-bit register for signal <frame_in<279>>.
+    Found 32-bit register for signal <frame_in<280>>.
+    Found 32-bit register for signal <frame_in<281>>.
+    Found 32-bit register for signal <frame_in<282>>.
+    Found 32-bit register for signal <frame_in<283>>.
+    Found 32-bit register for signal <frame_in<284>>.
+    Found 32-bit register for signal <frame_in<285>>.
+    Found 32-bit register for signal <frame_in<286>>.
+    Found 32-bit register for signal <frame_in<287>>.
+    Found 32-bit register for signal <frame_in<288>>.
+    Found 32-bit register for signal <frame_in<289>>.
+    Found 32-bit register for signal <frame_in<290>>.
+    Found 32-bit register for signal <frame_in<291>>.
+    Found 32-bit register for signal <frame_in<292>>.
+    Found 32-bit register for signal <frame_in<293>>.
+    Found 32-bit register for signal <frame_in<294>>.
+    Found 32-bit register for signal <frame_in<295>>.
+    Found 32-bit register for signal <frame_in<296>>.
+    Found 32-bit register for signal <frame_in<297>>.
+    Found 32-bit register for signal <frame_in<298>>.
+    Found 32-bit register for signal <frame_in<299>>.
+    Found 32-bit register for signal <frame_in<300>>.
+    Found 32-bit register for signal <frame_in<301>>.
+    Found 32-bit register for signal <frame_in<302>>.
+    Found 32-bit register for signal <frame_in<303>>.
+    Found 32-bit register for signal <frame_in<304>>.
+    Found 32-bit register for signal <frame_in<305>>.
+    Found 32-bit register for signal <frame_in<306>>.
+    Found 32-bit register for signal <frame_in<307>>.
+    Found 32-bit register for signal <frame_in<308>>.
+    Found 32-bit register for signal <frame_in<309>>.
+    Found 32-bit register for signal <frame_in<310>>.
+    Found 32-bit register for signal <frame_in<311>>.
+    Found 32-bit register for signal <frame_in<312>>.
+    Found 32-bit register for signal <frame_in<313>>.
+    Found 32-bit register for signal <frame_in<314>>.
+    Found 32-bit register for signal <frame_in<315>>.
+    Found 32-bit register for signal <frame_in<316>>.
+    Found 32-bit register for signal <frame_in<317>>.
+    Found 32-bit register for signal <frame_in<318>>.
+    Found 32-bit register for signal <frame_in<319>>.
+    Found 32-bit register for signal <frame_in<320>>.
+    Found 32-bit register for signal <frame_in<321>>.
+    Found 32-bit register for signal <frame_in<322>>.
+    Found 32-bit register for signal <frame_in<323>>.
+    Found 32-bit register for signal <frame_in<324>>.
+    Found 32-bit register for signal <frame_in<325>>.
+    Found 32-bit register for signal <frame_in<326>>.
+    Found 32-bit register for signal <frame_in<327>>.
+    Found 32-bit register for signal <frame_in<328>>.
+    Found 32-bit register for signal <frame_in<329>>.
+    Found 32-bit register for signal <frame_in<330>>.
+    Found 32-bit register for signal <frame_in<331>>.
+    Found 32-bit register for signal <frame_in<332>>.
+    Found 32-bit register for signal <frame_in<333>>.
+    Found 32-bit register for signal <frame_in<334>>.
+    Found 32-bit register for signal <frame_in<335>>.
+    Found 32-bit register for signal <frame_in<336>>.
+    Found 32-bit register for signal <frame_in<337>>.
+    Found 32-bit register for signal <frame_in<338>>.
+    Found 32-bit register for signal <frame_in<339>>.
+    Found 32-bit register for signal <frame_in<340>>.
+    Found 32-bit register for signal <frame_in<341>>.
+    Found 32-bit register for signal <frame_in<342>>.
+    Found 32-bit register for signal <frame_in<343>>.
+    Found 32-bit register for signal <frame_in<344>>.
+    Found 32-bit register for signal <frame_in<345>>.
+    Found 32-bit register for signal <frame_in<346>>.
+    Found 32-bit register for signal <frame_in<347>>.
+    Found 32-bit register for signal <frame_in<348>>.
+    Found 32-bit register for signal <frame_in<349>>.
+    Found 32-bit register for signal <frame_in<350>>.
+    Found 32-bit register for signal <frame_in<351>>.
+    Found 32-bit register for signal <frame_in<352>>.
+    Found 32-bit register for signal <frame_in<353>>.
+    Found 32-bit register for signal <frame_in<354>>.
+    Found 32-bit register for signal <frame_in<355>>.
+    Found 32-bit register for signal <frame_in<356>>.
+    Found 32-bit register for signal <frame_in<357>>.
+    Found 32-bit register for signal <frame_in<358>>.
+    Found 32-bit register for signal <frame_in<359>>.
+    Found 32-bit register for signal <frame_in<360>>.
+    Found 32-bit register for signal <frame_in<361>>.
+    Found 32-bit register for signal <frame_in<362>>.
+    Found 32-bit register for signal <frame_in<363>>.
+    Found 32-bit register for signal <frame_in<364>>.
+    Found 32-bit register for signal <frame_in<365>>.
+    Found 32-bit register for signal <frame_in<366>>.
+    Found 32-bit register for signal <frame_in<367>>.
+    Found 32-bit register for signal <frame_in<368>>.
+    Found 32-bit register for signal <frame_in<369>>.
+    Found 32-bit register for signal <frame_in<370>>.
+    Found 32-bit register for signal <frame_in<371>>.
+    Found 32-bit register for signal <frame_in<372>>.
+    Found 32-bit register for signal <frame_in<373>>.
+    Found 32-bit register for signal <frame_in<374>>.
+    Found 32-bit register for signal <frame_in<375>>.
+    Found 32-bit register for signal <frame_in<376>>.
+    Found 32-bit register for signal <frame_in<377>>.
+    Found 32-bit register for signal <frame_in<378>>.
+    Found 32-bit register for signal <frame_in<379>>.
+    Found 32-bit register for signal <frame_in<380>>.
+    Found 32-bit register for signal <frame_in<381>>.
+    Found 32-bit register for signal <frame_in<382>>.
+    Found 32-bit register for signal <frame_in<383>>.
+    Found 32-bit register for signal <frame_in<384>>.
+    Found 32-bit register for signal <frame_in<385>>.
+    Found 32-bit register for signal <frame_in<386>>.
+    Found 32-bit register for signal <frame_in<387>>.
+    Found 32-bit register for signal <frame_in<388>>.
+    Found 32-bit register for signal <frame_in<389>>.
+    Found 32-bit register for signal <frame_in<390>>.
+    Found 32-bit register for signal <frame_in<391>>.
+    Found 32-bit register for signal <frame_in<392>>.
+    Found 32-bit register for signal <frame_in<393>>.
+    Found 32-bit register for signal <frame_in<394>>.
+    Found 32-bit register for signal <frame_in<395>>.
+    Found 32-bit register for signal <frame_in<396>>.
+    Found 32-bit register for signal <frame_in<397>>.
+    Found 32-bit register for signal <frame_in<398>>.
+    Found 32-bit register for signal <frame_in<399>>.
+    Found 32-bit register for signal <frame_in<400>>.
+    Found 32-bit register for signal <frame_in<401>>.
+    Found 32-bit register for signal <frame_in<402>>.
+    Found 32-bit register for signal <frame_in<403>>.
+    Found 32-bit register for signal <frame_in<404>>.
+    Found 32-bit register for signal <frame_in<405>>.
+    Found 32-bit register for signal <frame_in<406>>.
+    Found 32-bit register for signal <frame_in<407>>.
+    Found 32-bit register for signal <frame_in<408>>.
+    Found 32-bit register for signal <frame_in<409>>.
+    Found 32-bit register for signal <frame_in<410>>.
+    Found 32-bit register for signal <frame_in<411>>.
+    Found 32-bit register for signal <frame_in<412>>.
+    Found 32-bit register for signal <frame_in<413>>.
+    Found 32-bit register for signal <frame_in<414>>.
+    Found 32-bit register for signal <frame_in<415>>.
+    Found 32-bit register for signal <frame_in<416>>.
+    Found 32-bit register for signal <frame_in<417>>.
+    Found 32-bit register for signal <frame_in<418>>.
+    Found 32-bit register for signal <frame_in<419>>.
+    Found 32-bit register for signal <frame_in<420>>.
+    Found 32-bit register for signal <frame_in<421>>.
+    Found 32-bit register for signal <frame_in<422>>.
+    Found 32-bit register for signal <frame_in<423>>.
+    Found 32-bit register for signal <frame_in<424>>.
+    Found 32-bit register for signal <frame_in<425>>.
+    Found 32-bit register for signal <frame_in<426>>.
+    Found 32-bit register for signal <frame_in<427>>.
+    Found 32-bit register for signal <frame_in<428>>.
+    Found 32-bit register for signal <frame_in<429>>.
+    Found 32-bit register for signal <frame_in<430>>.
+    Found 32-bit register for signal <frame_in<431>>.
+    Found 32-bit register for signal <frame_in<432>>.
+    Found 32-bit register for signal <frame_in<433>>.
+    Found 32-bit register for signal <frame_in<434>>.
+    Found 32-bit register for signal <frame_in<435>>.
+    Found 32-bit register for signal <frame_in<436>>.
+    Found 32-bit register for signal <frame_in<437>>.
+    Found 32-bit register for signal <frame_in<438>>.
+    Found 32-bit register for signal <frame_in<439>>.
+    Found 32-bit register for signal <frame_in<440>>.
+    Found 32-bit register for signal <frame_in<441>>.
+    Found 32-bit register for signal <frame_in<442>>.
+    Found 32-bit register for signal <frame_in<443>>.
+    Found 32-bit register for signal <frame_in<444>>.
+    Found 32-bit register for signal <frame_in<445>>.
+    Found 32-bit register for signal <frame_in<446>>.
+    Found 32-bit register for signal <frame_in<447>>.
+    Found 32-bit register for signal <frame_in<448>>.
+    Found 32-bit register for signal <frame_in<449>>.
+    Found 32-bit register for signal <frame_in<450>>.
+    Found 32-bit register for signal <frame_in<451>>.
+    Found 32-bit register for signal <frame_in<452>>.
+    Found 32-bit register for signal <frame_in<453>>.
+    Found 32-bit register for signal <frame_in<454>>.
+    Found 32-bit register for signal <frame_in<455>>.
+    Found 32-bit register for signal <frame_in<456>>.
+    Found 32-bit register for signal <frame_in<457>>.
+    Found 32-bit register for signal <frame_in<458>>.
+    Found 32-bit register for signal <frame_in<459>>.
+    Found 32-bit register for signal <frame_in<460>>.
+    Found 32-bit register for signal <frame_in<461>>.
+    Found 32-bit register for signal <frame_in<462>>.
+    Found 32-bit register for signal <frame_in<463>>.
+    Found 32-bit register for signal <frame_in<464>>.
+    Found 32-bit register for signal <frame_in<465>>.
+    Found 32-bit register for signal <frame_in<466>>.
+    Found 32-bit register for signal <frame_in<467>>.
+    Found 32-bit register for signal <frame_in<468>>.
+    Found 32-bit register for signal <frame_in<469>>.
+    Found 32-bit register for signal <frame_in<470>>.
+    Found 32-bit register for signal <frame_in<471>>.
+    Found 32-bit register for signal <frame_in<472>>.
+    Found 32-bit register for signal <frame_in<473>>.
+    Found 32-bit register for signal <frame_in<474>>.
+    Found 32-bit register for signal <frame_in<475>>.
+    Found 32-bit register for signal <frame_in<476>>.
+    Found 32-bit register for signal <frame_in<477>>.
+    Found 32-bit register for signal <frame_in<478>>.
+    Found 32-bit register for signal <frame_in<479>>.
+    Found 32-bit register for signal <frame_in<480>>.
+    Found 32-bit register for signal <frame_in<481>>.
+    Found 32-bit register for signal <frame_in<482>>.
+    Found 32-bit register for signal <frame_in<483>>.
+    Found 32-bit register for signal <frame_in<484>>.
+    Found 32-bit register for signal <frame_in<485>>.
+    Found 32-bit register for signal <frame_in<486>>.
+    Found 32-bit register for signal <frame_in<487>>.
+    Found 32-bit register for signal <frame_in<488>>.
+    Found 32-bit register for signal <frame_in<489>>.
+    Found 32-bit register for signal <frame_in<490>>.
+    Found 32-bit register for signal <frame_in<491>>.
+    Found 32-bit register for signal <frame_in<492>>.
+    Found 32-bit register for signal <frame_in<493>>.
+    Found 32-bit register for signal <frame_in<494>>.
+    Found 32-bit register for signal <frame_in<495>>.
+    Found 32-bit register for signal <frame_in<496>>.
+    Found 32-bit register for signal <frame_in<497>>.
+    Found 32-bit register for signal <frame_in<498>>.
+    Found 32-bit register for signal <frame_in<499>>.
+    Found 32-bit register for signal <frame_in<500>>.
+    Found 32-bit register for signal <frame_in<501>>.
+    Found 32-bit register for signal <frame_in<502>>.
+    Found 32-bit register for signal <frame_in<503>>.
+    Found 32-bit register for signal <frame_in<504>>.
+    Found 32-bit register for signal <frame_in<505>>.
+    Found 32-bit register for signal <frame_in<506>>.
+    Found 32-bit register for signal <frame_in<507>>.
+    Found 32-bit register for signal <frame_in<508>>.
+    Found 32-bit register for signal <frame_in<509>>.
+    Found 32-bit register for signal <frame_in<510>>.
+    Found 32-bit register for signal <frame_in<511>>.
+    Found 1-bit register for signal <en_send>.
+    Found 10-bit register for signal <cnt_frame>.
+    Found 1-bit register for signal <flag_first_enterance>.
+    Found 8-bit register for signal <cnt_step>.
+    Found 10-bit register for signal <cnt_frame_out>.
+    Found 1-bit register for signal <Stream_enable_temp>.
+    Found 32-bit register for signal <frame_out<0>>.
+    Found 32-bit register for signal <frame_out<1>>.
+    Found 32-bit register for signal <frame_out<2>>.
+    Found 32-bit register for signal <frame_out<3>>.
+    Found 32-bit register for signal <frame_out<4>>.
+    Found 32-bit register for signal <frame_out<5>>.
+    Found 32-bit register for signal <frame_out<6>>.
+    Found 32-bit register for signal <frame_out<7>>.
+    Found 32-bit register for signal <frame_out<8>>.
+    Found 32-bit register for signal <frame_out<9>>.
+    Found 32-bit register for signal <frame_out<10>>.
+    Found 32-bit register for signal <frame_out<11>>.
+    Found 32-bit register for signal <frame_out<12>>.
+    Found 32-bit register for signal <frame_out<13>>.
+    Found 32-bit register for signal <frame_out<14>>.
+    Found 32-bit register for signal <frame_out<15>>.
+    Found 32-bit register for signal <frame_out<16>>.
+    Found 32-bit register for signal <frame_out<17>>.
+    Found 32-bit register for signal <frame_out<18>>.
+    Found 32-bit register for signal <frame_out<19>>.
+    Found 32-bit register for signal <frame_out<20>>.
+    Found 32-bit register for signal <frame_out<21>>.
+    Found 32-bit register for signal <frame_out<22>>.
+    Found 32-bit register for signal <frame_out<23>>.
+    Found 32-bit register for signal <frame_out<24>>.
+    Found 32-bit register for signal <frame_out<25>>.
+    Found 32-bit register for signal <frame_out<26>>.
+    Found 32-bit register for signal <frame_out<27>>.
+    Found 32-bit register for signal <frame_out<28>>.
+    Found 32-bit register for signal <frame_out<29>>.
+    Found 32-bit register for signal <frame_out<30>>.
+    Found 32-bit register for signal <frame_out<31>>.
+    Found 32-bit register for signal <frame_out<32>>.
+    Found 32-bit register for signal <frame_out<33>>.
+    Found 32-bit register for signal <frame_out<34>>.
+    Found 32-bit register for signal <frame_out<35>>.
+    Found 32-bit register for signal <frame_out<36>>.
+    Found 32-bit register for signal <frame_out<37>>.
+    Found 32-bit register for signal <frame_out<38>>.
+    Found 32-bit register for signal <frame_out<39>>.
+    Found 32-bit register for signal <frame_out<40>>.
+    Found 32-bit register for signal <frame_out<41>>.
+    Found 32-bit register for signal <frame_out<42>>.
+    Found 32-bit register for signal <frame_out<43>>.
+    Found 32-bit register for signal <frame_out<44>>.
+    Found 32-bit register for signal <frame_out<45>>.
+    Found 32-bit register for signal <frame_out<46>>.
+    Found 32-bit register for signal <frame_out<47>>.
+    Found 32-bit register for signal <frame_out<48>>.
+    Found 32-bit register for signal <frame_out<49>>.
+    Found 32-bit register for signal <frame_out<50>>.
+    Found 32-bit register for signal <frame_out<51>>.
+    Found 32-bit register for signal <frame_out<52>>.
+    Found 32-bit register for signal <frame_out<53>>.
+    Found 32-bit register for signal <frame_out<54>>.
+    Found 32-bit register for signal <frame_out<55>>.
+    Found 32-bit register for signal <frame_out<56>>.
+    Found 32-bit register for signal <frame_out<57>>.
+    Found 32-bit register for signal <frame_out<58>>.
+    Found 32-bit register for signal <frame_out<59>>.
+    Found 32-bit register for signal <frame_out<60>>.
+    Found 32-bit register for signal <frame_out<61>>.
+    Found 32-bit register for signal <frame_out<62>>.
+    Found 32-bit register for signal <frame_out<63>>.
+    Found 32-bit register for signal <frame_out<64>>.
+    Found 32-bit register for signal <frame_out<65>>.
+    Found 32-bit register for signal <frame_out<66>>.
+    Found 32-bit register for signal <frame_out<67>>.
+    Found 32-bit register for signal <frame_out<68>>.
+    Found 32-bit register for signal <frame_out<69>>.
+    Found 32-bit register for signal <frame_out<70>>.
+    Found 32-bit register for signal <frame_out<71>>.
+    Found 32-bit register for signal <frame_out<72>>.
+    Found 32-bit register for signal <frame_out<73>>.
+    Found 32-bit register for signal <frame_out<74>>.
+    Found 32-bit register for signal <frame_out<75>>.
+    Found 32-bit register for signal <frame_out<76>>.
+    Found 32-bit register for signal <frame_out<77>>.
+    Found 32-bit register for signal <frame_out<78>>.
+    Found 32-bit register for signal <frame_out<79>>.
+    Found 32-bit register for signal <frame_out<80>>.
+    Found 32-bit register for signal <frame_out<81>>.
+    Found 32-bit register for signal <frame_out<82>>.
+    Found 32-bit register for signal <frame_out<83>>.
+    Found 32-bit register for signal <frame_out<84>>.
+    Found 32-bit register for signal <frame_out<85>>.
+    Found 32-bit register for signal <frame_out<86>>.
+    Found 32-bit register for signal <frame_out<87>>.
+    Found 32-bit register for signal <frame_out<88>>.
+    Found 32-bit register for signal <frame_out<89>>.
+    Found 32-bit register for signal <frame_out<90>>.
+    Found 32-bit register for signal <frame_out<91>>.
+    Found 32-bit register for signal <frame_out<92>>.
+    Found 32-bit register for signal <frame_out<93>>.
+    Found 32-bit register for signal <frame_out<94>>.
+    Found 32-bit register for signal <frame_out<95>>.
+    Found 32-bit register for signal <frame_out<96>>.
+    Found 32-bit register for signal <frame_out<97>>.
+    Found 32-bit register for signal <frame_out<98>>.
+    Found 32-bit register for signal <frame_out<99>>.
+    Found 32-bit register for signal <frame_out<100>>.
+    Found 32-bit register for signal <frame_out<101>>.
+    Found 32-bit register for signal <frame_out<102>>.
+    Found 32-bit register for signal <frame_out<103>>.
+    Found 32-bit register for signal <frame_out<104>>.
+    Found 32-bit register for signal <frame_out<105>>.
+    Found 32-bit register for signal <frame_out<106>>.
+    Found 32-bit register for signal <frame_out<107>>.
+    Found 32-bit register for signal <frame_out<108>>.
+    Found 32-bit register for signal <frame_out<109>>.
+    Found 32-bit register for signal <frame_out<110>>.
+    Found 32-bit register for signal <frame_out<111>>.
+    Found 32-bit register for signal <frame_out<112>>.
+    Found 32-bit register for signal <frame_out<113>>.
+    Found 32-bit register for signal <frame_out<114>>.
+    Found 32-bit register for signal <frame_out<115>>.
+    Found 32-bit register for signal <frame_out<116>>.
+    Found 32-bit register for signal <frame_out<117>>.
+    Found 32-bit register for signal <frame_out<118>>.
+    Found 32-bit register for signal <frame_out<119>>.
+    Found 32-bit register for signal <frame_out<120>>.
+    Found 32-bit register for signal <frame_out<121>>.
+    Found 32-bit register for signal <frame_out<122>>.
+    Found 32-bit register for signal <frame_out<123>>.
+    Found 32-bit register for signal <frame_out<124>>.
+    Found 32-bit register for signal <frame_out<125>>.
+    Found 32-bit register for signal <frame_out<126>>.
+    Found 32-bit register for signal <frame_out<127>>.
+    Found 32-bit register for signal <frame_out<128>>.
+    Found 32-bit register for signal <frame_out<129>>.
+    Found 32-bit register for signal <frame_out<130>>.
+    Found 32-bit register for signal <frame_out<131>>.
+    Found 32-bit register for signal <frame_out<132>>.
+    Found 32-bit register for signal <frame_out<133>>.
+    Found 32-bit register for signal <frame_out<134>>.
+    Found 32-bit register for signal <frame_out<135>>.
+    Found 32-bit register for signal <frame_out<136>>.
+    Found 32-bit register for signal <frame_out<137>>.
+    Found 32-bit register for signal <frame_out<138>>.
+    Found 32-bit register for signal <frame_out<139>>.
+    Found 32-bit register for signal <frame_out<140>>.
+    Found 32-bit register for signal <frame_out<141>>.
+    Found 32-bit register for signal <frame_out<142>>.
+    Found 32-bit register for signal <frame_out<143>>.
+    Found 32-bit register for signal <frame_out<144>>.
+    Found 32-bit register for signal <frame_out<145>>.
+    Found 32-bit register for signal <frame_out<146>>.
+    Found 32-bit register for signal <frame_out<147>>.
+    Found 32-bit register for signal <frame_out<148>>.
+    Found 32-bit register for signal <frame_out<149>>.
+    Found 32-bit register for signal <frame_out<150>>.
+    Found 32-bit register for signal <frame_out<151>>.
+    Found 32-bit register for signal <frame_out<152>>.
+    Found 32-bit register for signal <frame_out<153>>.
+    Found 32-bit register for signal <frame_out<154>>.
+    Found 32-bit register for signal <frame_out<155>>.
+    Found 32-bit register for signal <frame_out<156>>.
+    Found 32-bit register for signal <frame_out<157>>.
+    Found 32-bit register for signal <frame_out<158>>.
+    Found 32-bit register for signal <frame_out<159>>.
+    Found 32-bit register for signal <frame_out<160>>.
+    Found 32-bit register for signal <frame_out<161>>.
+    Found 32-bit register for signal <frame_out<162>>.
+    Found 32-bit register for signal <frame_out<163>>.
+    Found 32-bit register for signal <frame_out<164>>.
+    Found 32-bit register for signal <frame_out<165>>.
+    Found 32-bit register for signal <frame_out<166>>.
+    Found 32-bit register for signal <frame_out<167>>.
+    Found 32-bit register for signal <frame_out<168>>.
+    Found 32-bit register for signal <frame_out<169>>.
+    Found 32-bit register for signal <frame_out<170>>.
+    Found 32-bit register for signal <frame_out<171>>.
+    Found 32-bit register for signal <frame_out<172>>.
+    Found 32-bit register for signal <frame_out<173>>.
+    Found 32-bit register for signal <frame_out<174>>.
+    Found 32-bit register for signal <frame_out<175>>.
+    Found 32-bit register for signal <frame_out<176>>.
+    Found 32-bit register for signal <frame_out<177>>.
+    Found 32-bit register for signal <frame_out<178>>.
+    Found 32-bit register for signal <frame_out<179>>.
+    Found 32-bit register for signal <frame_out<180>>.
+    Found 32-bit register for signal <frame_out<181>>.
+    Found 32-bit register for signal <frame_out<182>>.
+    Found 32-bit register for signal <frame_out<183>>.
+    Found 32-bit register for signal <frame_out<184>>.
+    Found 32-bit register for signal <frame_out<185>>.
+    Found 32-bit register for signal <frame_out<186>>.
+    Found 32-bit register for signal <frame_out<187>>.
+    Found 32-bit register for signal <frame_out<188>>.
+    Found 32-bit register for signal <frame_out<189>>.
+    Found 32-bit register for signal <frame_out<190>>.
+    Found 32-bit register for signal <frame_out<191>>.
+    Found 32-bit register for signal <frame_out<192>>.
+    Found 32-bit register for signal <frame_out<193>>.
+    Found 32-bit register for signal <frame_out<194>>.
+    Found 32-bit register for signal <frame_out<195>>.
+    Found 32-bit register for signal <frame_out<196>>.
+    Found 32-bit register for signal <frame_out<197>>.
+    Found 32-bit register for signal <frame_out<198>>.
+    Found 32-bit register for signal <frame_out<199>>.
+    Found 32-bit register for signal <frame_out<200>>.
+    Found 32-bit register for signal <frame_out<201>>.
+    Found 32-bit register for signal <frame_out<202>>.
+    Found 32-bit register for signal <frame_out<203>>.
+    Found 32-bit register for signal <frame_out<204>>.
+    Found 32-bit register for signal <frame_out<205>>.
+    Found 32-bit register for signal <frame_out<206>>.
+    Found 32-bit register for signal <frame_out<207>>.
+    Found 32-bit register for signal <frame_out<208>>.
+    Found 32-bit register for signal <frame_out<209>>.
+    Found 32-bit register for signal <frame_out<210>>.
+    Found 32-bit register for signal <frame_out<211>>.
+    Found 32-bit register for signal <frame_out<212>>.
+    Found 32-bit register for signal <frame_out<213>>.
+    Found 32-bit register for signal <frame_out<214>>.
+    Found 32-bit register for signal <frame_out<215>>.
+    Found 32-bit register for signal <frame_out<216>>.
+    Found 32-bit register for signal <frame_out<217>>.
+    Found 32-bit register for signal <frame_out<218>>.
+    Found 32-bit register for signal <frame_out<219>>.
+    Found 32-bit register for signal <frame_out<220>>.
+    Found 32-bit register for signal <frame_out<221>>.
+    Found 32-bit register for signal <frame_out<222>>.
+    Found 32-bit register for signal <frame_out<223>>.
+    Found 32-bit register for signal <frame_out<224>>.
+    Found 32-bit register for signal <frame_out<225>>.
+    Found 32-bit register for signal <frame_out<226>>.
+    Found 32-bit register for signal <frame_out<227>>.
+    Found 32-bit register for signal <frame_out<228>>.
+    Found 32-bit register for signal <frame_out<229>>.
+    Found 32-bit register for signal <frame_out<230>>.
+    Found 32-bit register for signal <frame_out<231>>.
+    Found 32-bit register for signal <frame_out<232>>.
+    Found 32-bit register for signal <frame_out<233>>.
+    Found 32-bit register for signal <frame_out<234>>.
+    Found 32-bit register for signal <frame_out<235>>.
+    Found 32-bit register for signal <frame_out<236>>.
+    Found 32-bit register for signal <frame_out<237>>.
+    Found 32-bit register for signal <frame_out<238>>.
+    Found 32-bit register for signal <frame_out<239>>.
+    Found 32-bit register for signal <frame_out<240>>.
+    Found 32-bit register for signal <frame_out<241>>.
+    Found 32-bit register for signal <frame_out<242>>.
+    Found 32-bit register for signal <frame_out<243>>.
+    Found 32-bit register for signal <frame_out<244>>.
+    Found 32-bit register for signal <frame_out<245>>.
+    Found 32-bit register for signal <frame_out<246>>.
+    Found 32-bit register for signal <frame_out<247>>.
+    Found 32-bit register for signal <frame_out<248>>.
+    Found 32-bit register for signal <frame_out<249>>.
+    Found 32-bit register for signal <frame_out<250>>.
+    Found 32-bit register for signal <frame_out<251>>.
+    Found 32-bit register for signal <frame_out<252>>.
+    Found 32-bit register for signal <frame_out<253>>.
+    Found 32-bit register for signal <frame_out<254>>.
+    Found 32-bit register for signal <frame_out<255>>.
+    Found 32-bit register for signal <frame_out<256>>.
+    Found 32-bit register for signal <frame_out<257>>.
+    Found 32-bit register for signal <frame_out<258>>.
+    Found 32-bit register for signal <frame_out<259>>.
+    Found 32-bit register for signal <frame_out<260>>.
+    Found 32-bit register for signal <frame_out<261>>.
+    Found 32-bit register for signal <frame_out<262>>.
+    Found 32-bit register for signal <frame_out<263>>.
+    Found 32-bit register for signal <frame_out<264>>.
+    Found 32-bit register for signal <frame_out<265>>.
+    Found 32-bit register for signal <frame_out<266>>.
+    Found 32-bit register for signal <frame_out<267>>.
+    Found 32-bit register for signal <frame_out<268>>.
+    Found 32-bit register for signal <frame_out<269>>.
+    Found 32-bit register for signal <frame_out<270>>.
+    Found 32-bit register for signal <frame_out<271>>.
+    Found 32-bit register for signal <frame_out<272>>.
+    Found 32-bit register for signal <frame_out<273>>.
+    Found 32-bit register for signal <frame_out<274>>.
+    Found 32-bit register for signal <frame_out<275>>.
+    Found 32-bit register for signal <frame_out<276>>.
+    Found 32-bit register for signal <frame_out<277>>.
+    Found 32-bit register for signal <frame_out<278>>.
+    Found 32-bit register for signal <frame_out<279>>.
+    Found 32-bit register for signal <frame_out<280>>.
+    Found 32-bit register for signal <frame_out<281>>.
+    Found 32-bit register for signal <frame_out<282>>.
+    Found 32-bit register for signal <frame_out<283>>.
+    Found 32-bit register for signal <frame_out<284>>.
+    Found 32-bit register for signal <frame_out<285>>.
+    Found 32-bit register for signal <frame_out<286>>.
+    Found 32-bit register for signal <frame_out<287>>.
+    Found 32-bit register for signal <frame_out<288>>.
+    Found 32-bit register for signal <frame_out<289>>.
+    Found 32-bit register for signal <frame_out<290>>.
+    Found 32-bit register for signal <frame_out<291>>.
+    Found 32-bit register for signal <frame_out<292>>.
+    Found 32-bit register for signal <frame_out<293>>.
+    Found 32-bit register for signal <frame_out<294>>.
+    Found 32-bit register for signal <frame_out<295>>.
+    Found 32-bit register for signal <frame_out<296>>.
+    Found 32-bit register for signal <frame_out<297>>.
+    Found 32-bit register for signal <frame_out<298>>.
+    Found 32-bit register for signal <frame_out<299>>.
+    Found 32-bit register for signal <frame_out<300>>.
+    Found 32-bit register for signal <frame_out<301>>.
+    Found 32-bit register for signal <frame_out<302>>.
+    Found 32-bit register for signal <frame_out<303>>.
+    Found 32-bit register for signal <frame_out<304>>.
+    Found 32-bit register for signal <frame_out<305>>.
+    Found 32-bit register for signal <frame_out<306>>.
+    Found 32-bit register for signal <frame_out<307>>.
+    Found 32-bit register for signal <frame_out<308>>.
+    Found 32-bit register for signal <frame_out<309>>.
+    Found 32-bit register for signal <frame_out<310>>.
+    Found 32-bit register for signal <frame_out<311>>.
+    Found 32-bit register for signal <frame_out<312>>.
+    Found 32-bit register for signal <frame_out<313>>.
+    Found 32-bit register for signal <frame_out<314>>.
+    Found 32-bit register for signal <frame_out<315>>.
+    Found 32-bit register for signal <frame_out<316>>.
+    Found 32-bit register for signal <frame_out<317>>.
+    Found 32-bit register for signal <frame_out<318>>.
+    Found 32-bit register for signal <frame_out<319>>.
+    Found 32-bit register for signal <frame_out<320>>.
+    Found 32-bit register for signal <frame_out<321>>.
+    Found 32-bit register for signal <frame_out<322>>.
+    Found 32-bit register for signal <frame_out<323>>.
+    Found 32-bit register for signal <frame_out<324>>.
+    Found 32-bit register for signal <frame_out<325>>.
+    Found 32-bit register for signal <frame_out<326>>.
+    Found 32-bit register for signal <frame_out<327>>.
+    Found 32-bit register for signal <frame_out<328>>.
+    Found 32-bit register for signal <frame_out<329>>.
+    Found 32-bit register for signal <frame_out<330>>.
+    Found 32-bit register for signal <frame_out<331>>.
+    Found 32-bit register for signal <frame_out<332>>.
+    Found 32-bit register for signal <frame_out<333>>.
+    Found 32-bit register for signal <frame_out<334>>.
+    Found 32-bit register for signal <frame_out<335>>.
+    Found 32-bit register for signal <frame_out<336>>.
+    Found 32-bit register for signal <frame_out<337>>.
+    Found 32-bit register for signal <frame_out<338>>.
+    Found 32-bit register for signal <frame_out<339>>.
+    Found 32-bit register for signal <frame_out<340>>.
+    Found 32-bit register for signal <frame_out<341>>.
+    Found 32-bit register for signal <frame_out<342>>.
+    Found 32-bit register for signal <frame_out<343>>.
+    Found 32-bit register for signal <frame_out<344>>.
+    Found 32-bit register for signal <frame_out<345>>.
+    Found 32-bit register for signal <frame_out<346>>.
+    Found 32-bit register for signal <frame_out<347>>.
+    Found 32-bit register for signal <frame_out<348>>.
+    Found 32-bit register for signal <frame_out<349>>.
+    Found 32-bit register for signal <frame_out<350>>.
+    Found 32-bit register for signal <frame_out<351>>.
+    Found 32-bit register for signal <frame_out<352>>.
+    Found 32-bit register for signal <frame_out<353>>.
+    Found 32-bit register for signal <frame_out<354>>.
+    Found 32-bit register for signal <frame_out<355>>.
+    Found 32-bit register for signal <frame_out<356>>.
+    Found 32-bit register for signal <frame_out<357>>.
+    Found 32-bit register for signal <frame_out<358>>.
+    Found 32-bit register for signal <frame_out<359>>.
+    Found 32-bit register for signal <frame_out<360>>.
+    Found 32-bit register for signal <frame_out<361>>.
+    Found 32-bit register for signal <frame_out<362>>.
+    Found 32-bit register for signal <frame_out<363>>.
+    Found 32-bit register for signal <frame_out<364>>.
+    Found 32-bit register for signal <frame_out<365>>.
+    Found 32-bit register for signal <frame_out<366>>.
+    Found 32-bit register for signal <frame_out<367>>.
+    Found 32-bit register for signal <frame_out<368>>.
+    Found 32-bit register for signal <frame_out<369>>.
+    Found 32-bit register for signal <frame_out<370>>.
+    Found 32-bit register for signal <frame_out<371>>.
+    Found 32-bit register for signal <frame_out<372>>.
+    Found 32-bit register for signal <frame_out<373>>.
+    Found 32-bit register for signal <frame_out<374>>.
+    Found 32-bit register for signal <frame_out<375>>.
+    Found 32-bit register for signal <frame_out<376>>.
+    Found 32-bit register for signal <frame_out<377>>.
+    Found 32-bit register for signal <frame_out<378>>.
+    Found 32-bit register for signal <frame_out<379>>.
+    Found 32-bit register for signal <frame_out<380>>.
+    Found 32-bit register for signal <frame_out<381>>.
+    Found 32-bit register for signal <frame_out<382>>.
+    Found 32-bit register for signal <frame_out<383>>.
+    Found 32-bit register for signal <frame_out<384>>.
+    Found 32-bit register for signal <frame_out<385>>.
+    Found 32-bit register for signal <frame_out<386>>.
+    Found 32-bit register for signal <frame_out<387>>.
+    Found 32-bit register for signal <frame_out<388>>.
+    Found 32-bit register for signal <frame_out<389>>.
+    Found 32-bit register for signal <frame_out<390>>.
+    Found 32-bit register for signal <frame_out<391>>.
+    Found 32-bit register for signal <frame_out<392>>.
+    Found 32-bit register for signal <frame_out<393>>.
+    Found 32-bit register for signal <frame_out<394>>.
+    Found 32-bit register for signal <frame_out<395>>.
+    Found 32-bit register for signal <frame_out<396>>.
+    Found 32-bit register for signal <frame_out<397>>.
+    Found 32-bit register for signal <frame_out<398>>.
+    Found 32-bit register for signal <frame_out<399>>.
+    Found 32-bit register for signal <frame_out<400>>.
+    Found 32-bit register for signal <frame_out<401>>.
+    Found 32-bit register for signal <frame_out<402>>.
+    Found 32-bit register for signal <frame_out<403>>.
+    Found 32-bit register for signal <frame_out<404>>.
+    Found 32-bit register for signal <frame_out<405>>.
+    Found 32-bit register for signal <frame_out<406>>.
+    Found 32-bit register for signal <frame_out<407>>.
+    Found 32-bit register for signal <frame_out<408>>.
+    Found 32-bit register for signal <frame_out<409>>.
+    Found 32-bit register for signal <frame_out<410>>.
+    Found 32-bit register for signal <frame_out<411>>.
+    Found 32-bit register for signal <frame_out<412>>.
+    Found 32-bit register for signal <frame_out<413>>.
+    Found 32-bit register for signal <frame_out<414>>.
+    Found 32-bit register for signal <frame_out<415>>.
+    Found 32-bit register for signal <frame_out<416>>.
+    Found 32-bit register for signal <frame_out<417>>.
+    Found 32-bit register for signal <frame_out<418>>.
+    Found 32-bit register for signal <frame_out<419>>.
+    Found 32-bit register for signal <frame_out<420>>.
+    Found 32-bit register for signal <frame_out<421>>.
+    Found 32-bit register for signal <frame_out<422>>.
+    Found 32-bit register for signal <frame_out<423>>.
+    Found 32-bit register for signal <frame_out<424>>.
+    Found 32-bit register for signal <frame_out<425>>.
+    Found 32-bit register for signal <frame_out<426>>.
+    Found 32-bit register for signal <frame_out<427>>.
+    Found 32-bit register for signal <frame_out<428>>.
+    Found 32-bit register for signal <frame_out<429>>.
+    Found 32-bit register for signal <frame_out<430>>.
+    Found 32-bit register for signal <frame_out<431>>.
+    Found 32-bit register for signal <frame_out<432>>.
+    Found 32-bit register for signal <frame_out<433>>.
+    Found 32-bit register for signal <frame_out<434>>.
+    Found 32-bit register for signal <frame_out<435>>.
+    Found 32-bit register for signal <frame_out<436>>.
+    Found 32-bit register for signal <frame_out<437>>.
+    Found 32-bit register for signal <frame_out<438>>.
+    Found 32-bit register for signal <frame_out<439>>.
+    Found 32-bit register for signal <frame_out<440>>.
+    Found 32-bit register for signal <frame_out<441>>.
+    Found 32-bit register for signal <frame_out<442>>.
+    Found 32-bit register for signal <frame_out<443>>.
+    Found 32-bit register for signal <frame_out<444>>.
+    Found 32-bit register for signal <frame_out<445>>.
+    Found 32-bit register for signal <frame_out<446>>.
+    Found 32-bit register for signal <frame_out<447>>.
+    Found 32-bit register for signal <frame_out<448>>.
+    Found 32-bit register for signal <frame_out<449>>.
+    Found 32-bit register for signal <frame_out<450>>.
+    Found 32-bit register for signal <frame_out<451>>.
+    Found 32-bit register for signal <frame_out<452>>.
+    Found 32-bit register for signal <frame_out<453>>.
+    Found 32-bit register for signal <frame_out<454>>.
+    Found 32-bit register for signal <frame_out<455>>.
+    Found 32-bit register for signal <frame_out<456>>.
+    Found 32-bit register for signal <frame_out<457>>.
+    Found 32-bit register for signal <frame_out<458>>.
+    Found 32-bit register for signal <frame_out<459>>.
+    Found 32-bit register for signal <frame_out<460>>.
+    Found 32-bit register for signal <frame_out<461>>.
+    Found 32-bit register for signal <frame_out<462>>.
+    Found 32-bit register for signal <frame_out<463>>.
+    Found 32-bit register for signal <frame_out<464>>.
+    Found 32-bit register for signal <frame_out<465>>.
+    Found 32-bit register for signal <frame_out<466>>.
+    Found 32-bit register for signal <frame_out<467>>.
+    Found 32-bit register for signal <frame_out<468>>.
+    Found 32-bit register for signal <frame_out<469>>.
+    Found 32-bit register for signal <frame_out<470>>.
+    Found 32-bit register for signal <frame_out<471>>.
+    Found 32-bit register for signal <frame_out<472>>.
+    Found 32-bit register for signal <frame_out<473>>.
+    Found 32-bit register for signal <frame_out<474>>.
+    Found 32-bit register for signal <frame_out<475>>.
+    Found 32-bit register for signal <frame_out<476>>.
+    Found 32-bit register for signal <frame_out<477>>.
+    Found 32-bit register for signal <frame_out<478>>.
+    Found 32-bit register for signal <frame_out<479>>.
+    Found 32-bit register for signal <frame_out<480>>.
+    Found 32-bit register for signal <frame_out<481>>.
+    Found 32-bit register for signal <frame_out<482>>.
+    Found 32-bit register for signal <frame_out<483>>.
+    Found 32-bit register for signal <frame_out<484>>.
+    Found 32-bit register for signal <frame_out<485>>.
+    Found 32-bit register for signal <frame_out<486>>.
+    Found 32-bit register for signal <frame_out<487>>.
+    Found 32-bit register for signal <frame_out<488>>.
+    Found 32-bit register for signal <frame_out<489>>.
+    Found 32-bit register for signal <frame_out<490>>.
+    Found 32-bit register for signal <frame_out<491>>.
+    Found 32-bit register for signal <frame_out<492>>.
+    Found 32-bit register for signal <frame_out<493>>.
+    Found 32-bit register for signal <frame_out<494>>.
+    Found 32-bit register for signal <frame_out<495>>.
+    Found 32-bit register for signal <frame_out<496>>.
+    Found 32-bit register for signal <frame_out<497>>.
+    Found 32-bit register for signal <frame_out<498>>.
+    Found 32-bit register for signal <frame_out<499>>.
+    Found 32-bit register for signal <frame_out<500>>.
+    Found 32-bit register for signal <frame_out<501>>.
+    Found 32-bit register for signal <frame_out<502>>.
+    Found 32-bit register for signal <frame_out<503>>.
+    Found 32-bit register for signal <frame_out<504>>.
+    Found 32-bit register for signal <frame_out<505>>.
+    Found 32-bit register for signal <frame_out<506>>.
+    Found 32-bit register for signal <frame_out<507>>.
+    Found 32-bit register for signal <frame_out<508>>.
+    Found 32-bit register for signal <frame_out<509>>.
+    Found 32-bit register for signal <frame_out<510>>.
+    Found 32-bit register for signal <frame_out<511>>.
+    Found 32-bit register for signal <Stream_out>.
+    Found 32-bit register for signal <frame_in<0>>.
+    Found 10-bit adder for signal <cnt_frame[9]_GND_17_o_add_0_OUT> created at line 79.
+    Found 8-bit adder for signal <cnt_step[7]_GND_17_o_add_3_OUT> created at line 87.
+    Found 10-bit adder for signal <cnt_frame_out[9]_GND_17_o_add_1551_OUT> created at line 108.
+    Found 10-bit comparator greater for signal <cnt_frame_out[9]_PWR_17_o_LessThan_1551_o> created at line 107
+    Found 10-bit comparator greater for signal <cnt_frame_out[9]_GND_17_o_LessThan_1556_o> created at line 118
+    Found 10-bit comparator greater for signal <cnt_frame_out[9]_GND_17_o_LessThan_1557_o> created at line 119
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 32831 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred 512 Multiplexer(s).
+Unit <get_frames> synthesized.
+
+Synthesizing Unit <windowing>.
+    Related source file is "D:\Library_Projects_FPGA\VegaVAD\windowing.v".
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\windowing.v" line 578: Output port <s_axis_a_tready> of the instance <multiplier> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\windowing.v" line 578: Output port <s_axis_b_tready> of the instance <multiplier> is unconnected or connected to loadless signal.
+    Register <tvalid_reg_coeffs> equivalent to <tvalid_stream_temp> has been removed
+    Found 1-bit register for signal <tvalid_stream_temp>.
+    Found 32-bit register for signal <reg_coeffs>.
+    Found 9-bit register for signal <ind>.
+    Found 32-bit register for signal <stream_temp>.
+    Found 9-bit adder for signal <ind[8]_GND_18_o_add_515_OUT> created at line 569.
+    Found 512x32-bit Read Only RAM for signal <ind[8]_hamming_win_coeffs[511][31]_wide_mux_514_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  74 D-type flip-flop(s).
+Unit <windowing> synthesized.
+
+Synthesizing Unit <power_spectrum>.
+    Related source file is "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v".
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 82: Output port <s_axis_config_tready> of the instance <magnitude_spectrum> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 82: Output port <s_axis_data_tready> of the instance <magnitude_spectrum> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 82: Output port <m_axis_data_tlast> of the instance <magnitude_spectrum> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 82: Output port <event_frame_started> of the instance <magnitude_spectrum> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 82: Output port <event_tlast_unexpected> of the instance <magnitude_spectrum> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 82: Output port <event_tlast_missing> of the instance <magnitude_spectrum> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 82: Output port <event_data_in_channel_halt> of the instance <magnitude_spectrum> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 101: Output port <s_axis_a_tready> of the instance <power_im_part> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 101: Output port <s_axis_b_tready> of the instance <power_im_part> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 114: Output port <s_axis_a_tready> of the instance <power_re_part> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 114: Output port <s_axis_b_tready> of the instance <power_re_part> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 127: Output port <s_axis_a_tready> of the instance <pow_adder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 127: Output port <s_axis_b_tready> of the instance <pow_adder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 140: Output port <s_axis_a_tready> of the instance <out_mag_spec> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 150: Output port <s_axis_a_tready> of the instance <m_pow_mag_spec> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 150: Output port <s_axis_b_tready> of the instance <m_pow_mag_spec> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 163: Output port <s_axis_a_tready> of the instance <out_pow_spec> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\Library_Projects_FPGA\VegaVAD\power_spectrum.v" line 163: Output port <s_axis_b_tready> of the instance <out_pow_spec> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <s_axis_data_tlast> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Register <tvalid_im_part> equivalent to <tvalid_re_part> has been removed
+    Found 32-bit register for signal <im_part>.
+    Found 32-bit register for signal <re_part>.
+    Found 1-bit register for signal <tvalid_re_part>.
+    Found 9-bit register for signal <cnt_NFFT257>.
+    Found 1-bit register for signal <tready_powspectr_tmp>.
+    Found 32-bit register for signal <powspectr_tmp>.
+    Found 1-bit register for signal <s_axis_data_tvalid>.
+    Found 32-bit register for signal <s_axis_data_tdata>.
+    Found 9-bit adder for signal <cnt_NFFT257[8]_GND_19_o_add_3_OUT> created at line 195.
+    Found 9-bit comparator greater for signal <cnt_NFFT257[8]_PWR_19_o_LessThan_3_o> created at line 194
+    WARNING:Xst:2404 -  FFs/Latches <s_axis_data_tdata<63:32>> (without init value) have a constant value of 0 in block <power_spectrum>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 140 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <power_spectrum> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 4
- 17-bit adder                                          : 1
+# RAMs                                                 : 1
+ 512x32-bit single-port Read Only RAM                  : 1
+# Adders/Subtractors                                   : 9
+ 10-bit adder                                          : 2
+ 20-bit adder                                          : 1
  4-bit adder                                           : 1
  5-bit adder                                           : 2
-# Registers                                            : 9
- 1-bit register                                        : 3
- 17-bit register                                       : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 2
+# Registers                                            : 1054
+ 1-bit register                                        : 11
+ 10-bit register                                       : 2
+ 20-bit register                                       : 1
  24-bit register                                       : 2
+ 32-bit register                                       : 1032
  4-bit register                                        : 1
  5-bit register                                        : 2
-# Comparators                                          : 1
- 17-bit comparator greater                             : 1
-# Multiplexers                                         : 2
+ 8-bit register                                        : 1
+ 9-bit register                                        : 2
+# Comparators                                          : 5
+ 10-bit comparator greater                             : 3
+ 20-bit comparator greater                             : 1
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 515
+ 1-bit 2-to-1 multiplexer                              : 1
  24-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 512
 
 =========================================================================
 
@@ -215,6 +1403,29 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Reading core <ipcore_dir/floating_point_int24_to_float32.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/floating_point_mult.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/fft_block.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/floating_point_add.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/floating_point_square_root.ngc>.
+Reading Secure Unit <blk00000001>.
+Reading core <ipcore_dir/floating_point_div.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <floating_point_int24_to_float32> for timing and area information for instance <Int24_to_Float32>.
+Loading core <floating_point_mult> for timing and area information for instance <multiplier>.
+Loading core <fft_block> for timing and area information for instance <magnitude_spectrum>.
+Loading core <floating_point_mult> for timing and area information for instance <power_im_part>.
+Loading core <floating_point_mult> for timing and area information for instance <power_re_part>.
+Loading core <floating_point_add> for timing and area information for instance <pow_adder>.
+Loading core <floating_point_square_root> for timing and area information for instance <out_mag_spec>.
+Loading core <floating_point_mult> for timing and area information for instance <m_pow_mag_spec>.
+Loading core <floating_point_div> for timing and area information for instance <out_pow_spec>.
+Loading core <floating_point_add> for timing and area information for instance <adder>.
+Loading core <floating_point_mult> for timing and area information for instance <multiplier>.
 
 Synthesizing (advanced) Unit <ADC_PCM1808_controller>.
 The following registers are absorbed into counter <cnt_cmn_clk>: 1 register on signal <cnt_cmn_clk>.
@@ -226,20 +1437,60 @@ Synthesizing (advanced) Unit <VegaVAD_main>.
 The following registers are absorbed into counter <cnt_reset>: 1 register on signal <cnt_reset>.
 Unit <VegaVAD_main> synthesized (advanced).
 
+Synthesizing (advanced) Unit <get_frames>.
+The following registers are absorbed into counter <cnt_step>: 1 register on signal <cnt_step>.
+The following registers are absorbed into counter <cnt_frame>: 1 register on signal <cnt_frame>.
+The following registers are absorbed into counter <cnt_frame_out>: 1 register on signal <cnt_frame_out>.
+Unit <get_frames> synthesized (advanced).
+
+Synthesizing (advanced) Unit <power_spectrum>.
+The following registers are absorbed into counter <cnt_NFFT257>: 1 register on signal <cnt_NFFT257>.
+Unit <power_spectrum> synthesized (advanced).
+
+Synthesizing (advanced) Unit <windowing>.
+The following registers are absorbed into counter <ind>: 1 register on signal <ind>.
+INFO:Xst:3226 - The RAM <Mram_ind[8]_hamming_win_coeffs[511][31]_wide_mux_514_OUT> will be implemented as a BLOCK RAM, absorbing the following register(s): <reg_coeffs>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 32-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <ind>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <reg_coeffs>    |          |
+    |     dorstA         | connected to signal <tvalid_stream> | low      |
+    | reset value        | 00000000000000000000000000000000               |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <windowing> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 4
- 17-bit up counter                                     : 1
+# RAMs                                                 : 1
+ 512x32-bit single-port block Read Only RAM            : 1
+# Counters                                             : 9
+ 10-bit up counter                                     : 2
+ 20-bit up counter                                     : 1
  4-bit up counter                                      : 1
  5-bit up counter                                      : 2
-# Registers                                            : 51
- Flip-Flops                                            : 51
-# Comparators                                          : 1
- 17-bit comparator greater                             : 1
-# Multiplexers                                         : 2
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 2
+# Registers                                            : 33051
+ Flip-Flops                                            : 33051
+# Comparators                                          : 5
+ 10-bit comparator greater                             : 3
+ 20-bit comparator greater                             : 1
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 16324
+ 1-bit 2-to-1 multiplexer                              : 16320
  24-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 2
 
 =========================================================================
 
@@ -250,16 +1501,19 @@ Macro Statistics
 Optimizing unit <VegaVAD_main> ...
 
 Optimizing unit <ADC_PCM1808_controller> ...
+
+Optimizing unit <get_frames> ...
+
+Optimizing unit <windowing> ...
+
+Optimizing unit <power_spectrum> ...
+
+Optimizing unit <Pre_emphasis> ...
 WARNING:Xst:2677 - Node <audio_capture/cnt_right_channel_audio_bits_4> of sequential type is unconnected in block <VegaVAD_main>.
 WARNING:Xst:2677 - Node <audio_capture/cnt_right_channel_audio_bits_3> of sequential type is unconnected in block <VegaVAD_main>.
 WARNING:Xst:2677 - Node <audio_capture/cnt_right_channel_audio_bits_2> of sequential type is unconnected in block <VegaVAD_main>.
 WARNING:Xst:2677 - Node <audio_capture/cnt_right_channel_audio_bits_1> of sequential type is unconnected in block <VegaVAD_main>.
 WARNING:Xst:2677 - Node <audio_capture/cnt_right_channel_audio_bits_0> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/cnt_left_channel_audio_bits_4> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/cnt_left_channel_audio_bits_3> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/cnt_left_channel_audio_bits_2> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/cnt_left_channel_audio_bits_1> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/cnt_left_channel_audio_bits_0> of sequential type is unconnected in block <VegaVAD_main>.
 WARNING:Xst:2677 - Node <audio_capture/tvalid_right_channel_audio_data> of sequential type is unconnected in block <VegaVAD_main>.
 WARNING:Xst:2677 - Node <audio_capture/right_channel_audio_data_23> of sequential type is unconnected in block <VegaVAD_main>.
 WARNING:Xst:2677 - Node <audio_capture/right_channel_audio_data_22> of sequential type is unconnected in block <VegaVAD_main>.
@@ -285,44 +1539,104 @@ WARNING:Xst:2677 - Node <audio_capture/right_channel_audio_data_3> of sequential
 WARNING:Xst:2677 - Node <audio_capture/right_channel_audio_data_2> of sequential type is unconnected in block <VegaVAD_main>.
 WARNING:Xst:2677 - Node <audio_capture/right_channel_audio_data_1> of sequential type is unconnected in block <VegaVAD_main>.
 WARNING:Xst:2677 - Node <audio_capture/right_channel_audio_data_0> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_23> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_22> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_21> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_20> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_19> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_18> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_17> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_16> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_15> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_14> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_13> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_12> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_11> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_10> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_9> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_8> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_7> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_6> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_5> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_4> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_3> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_2> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_1> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/left_channel_audio_data_0> of sequential type is unconnected in block <VegaVAD_main>.
-WARNING:Xst:2677 - Node <audio_capture/tvalid_left_channel_audio_data> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/cnt_NFFT257_8> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/cnt_NFFT257_7> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/cnt_NFFT257_6> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/cnt_NFFT257_5> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/cnt_NFFT257_4> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/cnt_NFFT257_3> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/cnt_NFFT257_2> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/cnt_NFFT257_1> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/cnt_NFFT257_0> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_31> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_30> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_29> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_28> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_27> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_26> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_25> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_24> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_23> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_22> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_21> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_20> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_19> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_18> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_17> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_16> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_15> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_14> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_13> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_12> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_11> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_10> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_9> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_8> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_7> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_6> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_5> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_4> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_3> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_2> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_1> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/powspectr_tmp_0> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:2677 - Node <logfbank_features/fft_function/tready_powspectr_tmp> of sequential type is unconnected in block <VegaVAD_main>.
+WARNING:Xst:1293 - FF/Latch <cnt_reset_17> has a constant value of 0 in block <VegaVAD_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cnt_reset_18> has a constant value of 0 in block <VegaVAD_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cnt_reset_19> has a constant value of 0 in block <VegaVAD_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <logfbank_features/framing/cnt_frame_9> has a constant value of 0 in block <VegaVAD_main>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block VegaVAD_main, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block VegaVAD_main, actual ratio is 537.
+Optimizing block <VegaVAD_main> to meet ratio 100 (+ 5) of 2278 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <VegaVAD_main>, final ratio is 537.
 
 Final Macro Processing ...
+
+Processing Unit <VegaVAD_main> :
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_31>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_30>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_29>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_28>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_27>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_26>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_25>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_24>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_23>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_22>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_21>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_20>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_19>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_18>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_17>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_16>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_15>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_14>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_13>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_12>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_11>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_10>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_9>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_8>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_7>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_6>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_5>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_4>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_3>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_2>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_1>.
+	Found 2-bit shift register for signal <logfbank_features/hamming_window/stream_temp_0>.
+Unit <VegaVAD_main> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 22
- Flip-Flops                                            : 22
+# Registers                                            : 32991
+ Flip-Flops                                            : 32991
+# Shift Registers                                      : 32
+ 2-bit shift register                                  : 32
 
 =========================================================================
 
@@ -345,31 +1659,47 @@ Top Level Output File Name         : VegaVAD_main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 62
-#      GND                         : 1
-#      INV                         : 2
-#      LUT1                        : 16
-#      LUT2                        : 1
-#      LUT3                        : 2
-#      LUT4                        : 3
-#      LUT5                        : 1
-#      LUT6                        : 2
-#      MUXCY                       : 16
-#      VCC                         : 1
-#      XORCY                       : 17
-# FlipFlops/Latches                : 22
-#      FD                          : 2
-#      FDE                         : 16
-#      FDR                         : 4
-# Clock Buffers                    : 2
+# BELS                             : 38008
+#      GND                         : 200
+#      INV                         : 350
+#      LUT1                        : 391
+#      LUT2                        : 2333
+#      LUT3                        : 20345
+#      LUT4                        : 1346
+#      LUT5                        : 378
+#      LUT6                        : 820
+#      MULT_AND                    : 885
+#      MUXCY                       : 5454
+#      MUXF7                       : 39
+#      MUXF8                       : 4
+#      VCC                         : 156
+#      XORCY                       : 5307
+# FlipFlops/Latches                : 44863
+#      FD                          : 1478
+#      FDE                         : 23975
+#      FDR                         : 320
+#      FDRE                        : 19071
+#      FDS                         : 5
+#      FDSE                        : 14
+# RAMS                             : 23
+#      RAM64X1D                    : 10
+#      RAMB16BWER                  : 4
+#      RAMB8BWER                   : 9
+# Shift Registers                  : 3392
+#      SRL16E                      : 1218
+#      SRLC16E                     : 1924
+#      SRLC32E                     : 250
+# Clock Buffers                    : 3
 #      BUFG                        : 2
-# IO Buffers                       : 5
+#      BUFGP                       : 1
+# IO Buffers                       : 7
+#      IBUF                        : 2
 #      IBUFG                       : 1
 #      OBUF                        : 4
 # DCMs                             : 1
 #      DCM_SP                      : 1
-# Others                           : 1
-#      DAC_PCM5102A_controller     : 1
+# DSPs                             : 59
+#      DSP48A1                     : 59
 
 Device utilization summary:
 ---------------------------
@@ -378,23 +1708,31 @@ Selected Device : 6slx16ftg256-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              22  out of  18224     0%  
- Number of Slice LUTs:                   27  out of   9112     0%  
-    Number used as Logic:                27  out of   9112     0%  
+ Number of Slice Registers:           44863  out of  18224   246% (*) 
+ Number of Slice LUTs:                29375  out of   9112   322% (*) 
+    Number used as Logic:             25963  out of   9112   284% (*) 
+    Number used as Memory:             3412  out of   2176   156% (*) 
+       Number used as RAM:               20
+       Number used as SRL:             3392
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     27
-   Number with an unused Flip Flop:       5  out of     27    18%  
-   Number with an unused LUT:             0  out of     27     0%  
-   Number of fully used LUT-FF pairs:    22  out of     27    81%  
-   Number of unique control sets:         3
+ Number of LUT Flip Flop pairs used:  51957
+   Number with an unused Flip Flop:    7094  out of  51957    13%  
+   Number with an unused LUT:         22582  out of  51957    43%  
+   Number of fully used LUT-FF pairs: 22281  out of  51957    42%  
+   Number of unique control sets:        13
 
 IO Utilization: 
  Number of IOs:                           8
- Number of bonded IOBs:                   5  out of    186     2%  
+ Number of bonded IOBs:                   8  out of    186     4%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of Block RAM/FIFO:                9  out of     32    28%  
+    Number using Block RAM only:          9
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of DSP48A1s:                     59  out of     32   184% (*) 
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
 ---------------------------
 Partition Resource Summary:
@@ -417,7 +1755,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK_50M                            | DCM_SP:CLK2X           | 22    |
+CLK_50M                            | DCM_SP:CLK2X           | 31718 |
+PCM1808_BCK                        | BUFGP                  | 16614 |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -428,8 +1767,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.864ns (Maximum Frequency: 127.162MHz)
-   Minimum input arrival time before clock: No path found
+   Minimum period: 42.883ns (Maximum Frequency: 23.319MHz)
+   Minimum input arrival time before clock: 3.723ns
    Maximum output required time after clock: 3.634ns
    Maximum combinational path delay: No path found
 
@@ -439,26 +1778,230 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_50M'
-  Clock period: 7.864ns (frequency: 127.162MHz)
-  Total number of paths / destination ports: 546 / 42
+  Clock period: 42.883ns (frequency: 23.319MHz)
+  Total number of paths / destination ports: 176272152611 / 55561
 -------------------------------------------------------------------------
-Delay:               3.932ns (Levels of Logic = 2)
-  Source:            cnt_reset_10 (FF)
-  Destination:       cnt_reset_1 (FF)
+Delay:               21.441ns (Levels of Logic = 82)
+  Source:            sec_inst (FF)
+  Destination:       sec_inst (FF)
   Source Clock:      CLK_50M rising 2.0X
   Destination Clock: CLK_50M rising 2.0X
 
-  Data Path: cnt_reset_10 to cnt_reset_1
+  Data Path: sec_inst to sec_inst
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              3   0.447   0.898  cnt_reset_10 (cnt_reset_10)
-     LUT4:I0->O            1   0.203   0.808  PWR_1_o_cnt_reset[16]_LessThan_2_o_inv2_SW0 (N3)
-     LUT6:I3->O           18   0.205   1.049  PWR_1_o_cnt_reset[16]_LessThan_2_o_inv4 (PWR_1_o_cnt_reset[16]_LessThan_2_o_inv)
-     FDE:CE                    0.322          cnt_reset_1
+     SEC:C->out            7   0.447   1.021  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.172   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out          49   0.213   1.898  sec_inst (sec_net)
+     SEC:in->out           4   0.203   0.931  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.172   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.019   0.961  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.924  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.140   0.000  sec_inst (sec_net)
+     SEC:in->out           3   0.144   0.651  sec_inst (sec_net)
+     SEC:in->out           1   0.205   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.172   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           0   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           3   0.180   0.755  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.000  sec_inst (sec_net)
+     SEC:in->out           6   0.172   0.000  sec_inst (sec_net)
+     SEC:in->out           7   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out          37   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           3   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out          42   0.213   1.778  sec_inst (sec_net)
+     SEC:in->out           9   0.203   1.194  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.684  sec_inst (sec_net)
+     SEC:in->out          26   0.203   1.207  sec_inst (sec_net)
+     SEC:in->out           1   0.205   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.172   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           0   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.180   0.864  sec_inst (sec_net)
+     SEC:in->out          31   0.203   1.622  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.580  sec_inst (sec_net)
+     end scope: 'logfbank_features/fft_function/pow_adder/blk00000001:m_axis_result_tdata<27>'
+     end scope: 'logfbank_features/fft_function/pow_adder:m_axis_result_tdata<27>'
+     begin scope: 'logfbank_features/fft_function/out_mag_spec:s_axis_a_tdata<27>'
+     begin scope: 'logfbank_features/fft_function/out_mag_spec/blk00000001:s_axis_a_tdata<27>'
+     SEC:in->out           1   0.205   0.000  sec_inst (sec_net)
+     SEC:in                    0.102          sec_inst
     ----------------------------------------
-    Total                      3.932ns (1.177ns logic, 2.755ns route)
+    Total                     21.441ns (6.372ns logic, 15.069ns route)
+                                       (29.7% logic, 70.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PCM1808_BCK'
+  Clock period: 20.657ns (frequency: 48.411MHz)
+  Total number of paths / destination ports: 68273957029 / 33161
+-------------------------------------------------------------------------
+Delay:               20.657ns (Levels of Logic = 80)
+  Source:            sec_inst (FF)
+  Destination:       logfbank_features/framing/frame_in_0_30 (FF)
+  Source Clock:      PCM1808_BCK rising
+  Destination Clock: PCM1808_BCK rising
+
+  Data Path: sec_inst to logfbank_features/framing/frame_in_0_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out            7   0.447   1.021  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.172   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out          49   0.213   1.898  sec_inst (sec_net)
+     SEC:in->out           4   0.203   0.931  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.172   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.019   0.961  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.924  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.140   0.000  sec_inst (sec_net)
+     SEC:in->out           3   0.144   0.651  sec_inst (sec_net)
+     SEC:in->out           1   0.205   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.172   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           0   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           3   0.180   0.755  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.000  sec_inst (sec_net)
+     SEC:in->out           6   0.172   0.000  sec_inst (sec_net)
+     SEC:in->out           7   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out          37   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           3   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out          42   0.213   1.778  sec_inst (sec_net)
+     SEC:in->out           9   0.203   1.194  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.684  sec_inst (sec_net)
+     SEC:in->out          26   0.203   1.207  sec_inst (sec_net)
+     SEC:in->out           1   0.205   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.172   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           0   0.019   0.000  sec_inst (sec_net)
+     SEC:in->out           2   0.180   0.864  sec_inst (sec_net)
+     SEC:in->out          31   0.203   1.622  sec_inst (sec_net)
+     SEC:in->out           1   0.203   0.000  sec_inst (sec_net)
+     end scope: 'logfbank_features/pre_filtering/adder/blk00000001:m_axis_result_tdata<27>'
+     end scope: 'logfbank_features/pre_filtering/adder:m_axis_result_tdata<27>'
+     FDRE:D                    0.102          logfbank_features/framing/frame_in_0_27
+    ----------------------------------------
+    Total                     20.657ns (6.167ns logic, 14.490ns route)
                                        (29.9% logic, 70.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PCM1808_BCK'
+  Total number of paths / destination ports: 31 / 31
+-------------------------------------------------------------------------
+Offset:              3.723ns (Levels of Logic = 2)
+  Source:            PCM1808_LRCK (PAD)
+  Destination:       audio_capture/cnt_left_channel_audio_bits_4 (FF)
+  Destination Clock: PCM1808_BCK rising
+
+  Data Path: PCM1808_LRCK to audio_capture/cnt_left_channel_audio_bits_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.617  PCM1808_LRCK_IBUF (PCM1808_LRCK_IBUF)
+     LUT2:I1->O           29   0.205   1.249  audio_capture/Mcount_cnt_left_channel_audio_bits_val1 (audio_capture/Mcount_cnt_left_channel_audio_bits_val)
+     FDR:R                     0.430          audio_capture/cnt_left_channel_audio_bits_0
+    ----------------------------------------
+    Total                      3.723ns (1.857ns logic, 1.866ns route)
+                                       (49.9% logic, 50.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_50M'
@@ -489,20 +2032,30 @@ Clock to Setup on destination clock CLK_50M
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_50M        |    3.932|         |         |         |
+CLK_50M        |   21.441|         |         |         |
+PCM1808_BCK    |    9.635|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PCM1808_BCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_50M        |    8.373|         |         |         |
+PCM1808_BCK    |   20.657|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.66 secs
+Total REAL time to Xst completion: 198.00 secs
+Total CPU time to Xst completion: 197.71 secs
  
 --> 
 
-Total memory usage is 4494412 kilobytes
+Total memory usage is 5136420 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   70 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of warnings :  100 (   0 filtered)
+Number of infos    :   28 (   0 filtered)
 

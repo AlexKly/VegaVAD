@@ -22,6 +22,7 @@ module ADC_PCM1808_controller(
 	// Common ports:
 	input 				cmn_clk,				// 100 MHz
 	input					cmn_rst,				// Common reset
+	input					cmn_clk_adc,		// SCK 6.144 MHz
 
 	// PCM1808 ports:
 	input 				pcm1808_bck,		// Audio-data bit-clock
@@ -37,9 +38,6 @@ module ADC_PCM1808_controller(
 	output 				tvalid_RC_audio,	// Valid for right channel audio 24-bit
 	output 	[23:0] 	RC_audio				// Right channel audio 24-bit
 );
-
-	// Clock divider:
-	reg [3:0] 	cnt_cmn_clk 							= 0;
 	
 	// Capturing of audio-data:
 	reg 			tvalid_left_channel_audio_data 	= 1'b0;
@@ -48,16 +46,6 @@ module ADC_PCM1808_controller(
 	reg [23:0] 	right_channel_audio_data			= {24{1'b0}};
 	reg [4:0]	cnt_left_channel_audio_bits 		= 0;
 	reg [4:0]	cnt_right_channel_audio_bits 		= 0;
-
-	// Dividing clock for ADC:
-	always@ (posedge cmn_clk) begin
-		if (cmn_rst) begin
-			cnt_cmn_clk <= 0;
-		end
-		else begin
-			cnt_cmn_clk <= cnt_cmn_clk + 1;
-		end
-	end
 	
 	// Receiving audio data based on I2C interface:
 	// Left channel:
@@ -111,9 +99,9 @@ module ADC_PCM1808_controller(
 	end
 
 	// ADC PCM1808 ports:
-	assign pcm1808_fmt	= 1'b0;				// I2S, 24-bit format
-	assign pcm1808_md 	= 2'b10;				// Master mode (384 fs)
-	assign pcm1808_scki 	= cnt_cmn_clk[3];	// 6.25 MHz (16 kHz sampling rate)
+	assign pcm1808_fmt	= 1'b0;			// I2S, 24-bit format
+	assign pcm1808_md 	= 2'b10;			// Master mode (384 fs)
+	assign pcm1808_scki 	= cmn_clk_adc;	// 6.25 MHz (16 kHz sampling rate)
 	
 	// Output data ports:
 	assign tvalid_LC_audio	= tvalid_left_channel_audio_data;
