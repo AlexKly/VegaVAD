@@ -101,7 +101,7 @@ module ADC_PCM1808_controller(
 	// ADC PCM1808 ports:
 	assign pcm1808_fmt	= 1'b0;			// I2S, 24-bit format
 	assign pcm1808_md 	= 2'b10;			// Master mode (384 fs)
-	assign pcm1808_scki 	= cmn_clk_adc;	// 6.25 MHz (16 kHz sampling rate)
+	assign pcm1808_scki 	= cmn_clk_adc;	// 6.144 MHz (16 kHz sampling rate)
 	
 	// Output data ports:
 	assign tvalid_LC_audio	= tvalid_left_channel_audio_data;

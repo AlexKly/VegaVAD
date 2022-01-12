@@ -42,32 +42,81 @@ module DAC_PCM5102A_controller(
 	output				pcm5102a_lrck	// Audio data word clock input
 );
 
-	// FIFO play:
-	wire	[47:0]	fifo_play_dout;	// output [47 : 0] dout
-	wire 				fifo_play_full;	// output full
-	wire 				fifo_play_empty;	// output empty
+	// FIFO play 1:
+	wire	[47:0]	fifo_play_dout_1;		// output [47 : 0] dout
+	wire 				fifo_play_full_1;		// output full
+	wire 				fifo_play_empty_1;	// output empty
+	
+	// FIFO play 2:
+	wire	[47:0]	fifo_play_dout_2;		// output [47 : 0] dout
+	wire 				fifo_play_full_2;		// output full
+	wire 				fifo_play_empty_2;	// output empty
+	
+	// Controller FIFO's:
+	reg	[1:0]		order_record 				= 2'b00;
+	
+	// Serching falling edge word clock:
+	reg 				past_lrck 					= 1'b0;
+	wire 				falling_edge_lrck 		= past_lrck && !cnt_cmn_clk_dac_2[7];
 	
 	// Clock divider:
-	reg	[2:0] 	cnt_cmn_clk_dac_1	= 0;
-	reg	[7:0] 	cnt_cmn_clk_dac_2	= 0;
+	reg	[7:0] 	cnt_cmn_clk_dac_1			= 0;
+	reg	[2:0] 	cnt_cmn_clk_dac_2			= 0;
 
 	// LR word register:
-	reg	[47:0]	LR_word				= {48{1'b0}};
-	reg 				LC_audio_done 		= 1'b0;
-	reg				RC_audio_done 		= 1'b0;
+	reg	[47:0]	LR_word						= {48{1'b0}};
+	reg 				LC_audio_done 				= 1'b0;
+	reg				RC_audio_done 			 	= 1'b0;
+	reg				RC_audio_done_delayed	= 1'b0;
+	
+	// I2S interface:
+	reg	[47:0]	i2s_reg_out					= {48{1'b0}};
 
-	// FIFO play:
-	fifo_play fifo48x128 (
+	// FIFO play 1:
+	fifo_play fifo48x128_first (
 		.rst(cmn_rst), 								// input rst
-		.wr_clk(RC_audio_done), 					// input wr_clk
-		.rd_clk(cnt_cmn_clk_dac_2[7]), 			// input rd_clk
+		.wr_clk(RC_audio_done_delayed), 			// input wr_clk
+		.rd_clk(falling_edge_lrck), 				// input rd_clk
 		.din(LR_word), 								// input [47 : 0] din
 		.wr_en(!cmn_rst), 							// input wr_en
-		.rd_en(!cmn_rst && !fifo_play_empty),	// input rd_en
-		.dout(fifo_play_dout), 						// output [47 : 0] dout
-		.full(fifo_play_full),						// output full
-		.empty(fifo_play_empty)						// output empty
+		.rd_en(!cmn_rst && order_record[0]),	// input rd_en
+		.dout(fifo_play_dout_1), 					// output [47 : 0] dout
+		.full(fifo_play_full_1),					// output full
+		.empty(fifo_play_empty_1)					// output empty
 	);
+	
+	// FIFO play 2:
+	fifo_play fifo48x128_second (
+		.rst(cmn_rst), 								// input rst
+		.wr_clk(RC_audio_done_delayed), 			// input wr_clk
+		.rd_clk(falling_edge_lrck), 				// input rd_clk
+		.din(LR_word), 								// input [47 : 0] din
+		.wr_en(!cmn_rst), 							// input wr_en
+		.rd_en(!cmn_rst && order_record[1]),	// input rd_en
+		.dout(fifo_play_dout_2), 					// output [47 : 0] dout
+		.full(fifo_play_full_2),					// output full
+		.empty(fifo_play_empty_2)					// output empty
+	);
+	
+	// Controller FIFO's:
+	always@ (posedge cmn_clk) begin
+		if (cmn_rst) begin
+			order_record <= 2'b00;
+		end
+		else if (fifo_play_full_1 && !fifo_play_empty_1) begin
+			order_record <= 2'b01;
+		end
+		else if (fifo_play_full_2 && !fifo_play_empty_2) begin
+			order_record <= 2'b10;
+		end
+		
+		if (fifo_play_empty_1) begin
+			order_record[0] <= 1'b0;
+		end
+		if (fifo_play_empty_2) begin
+			order_record[1] <= 1'b0;
+		end
+	end
 
 	// Dividing clock for DAC:
 	always@ (posedge cmn_clk_dac_1) begin
@@ -85,6 +134,8 @@ module DAC_PCM5102A_controller(
 		else begin
 			cnt_cmn_clk_dac_2 <= cnt_cmn_clk_dac_2 + 1;
 		end
+		
+		past_lrck <= cnt_cmn_clk_dac_1[7];
 	end
 
 	// Unite audio data from two channels:
@@ -106,13 +157,21 @@ module DAC_PCM5102A_controller(
 				RC_audio_done	<= 1'b1;
 			end
 		end
+		
+		RC_audio_done_delayed <= RC_audio_done;
 	end
 	
-	/*
-	always@ (cnt_cmn_clk_dac_1[2]) begin
-		if ()
+	// I2S interface:
+	always@ (negedge cnt_cmn_clk_dac_1[2]) begin
+		if (falling_edge_lrck) begin
+			if (order_record[0]) begin
+				i2s_reg_out <= fifo_play_dout_1;
+			end
+			else if (order_record[1]) begin
+				i2s_reg_out <= fifo_play_dout_2;
+			end
+		end
 	end
-	*/
 	
 	// PCM5102A ports:
 	assign pcm5102a_flt	= 1'b0;						// FIR normal interpolation filters
@@ -120,7 +179,7 @@ module DAC_PCM5102A_controller(
 	assign pcm5102a_xsmt	= 1'b1;						// Soft mute control is off
 	assign pcm5102a_fmt	= 1'b0;						// I2S interface
 	assign pcm5102a_sck	= 1'b0;						// Not used
-	assign pcm5102a_bck	= cnt_cmn_clk_dac_1[2];	// 16 kHz * 48 = 768 kHz (bit clock)
-	assign pcm5102a_lrck	= cnt_cmn_clk_dac_2[7];	// 16 kHz sampling rate (word clock)
+	assign pcm5102a_bck	= cnt_cmn_clk_dac_2[2];	// 16 kHz * 48 = 768 kHz (bit clock)
+	assign pcm5102a_lrck	= cnt_cmn_clk_dac_1[7];	// 16 kHz sampling rate (word clock)
  
 endmodule

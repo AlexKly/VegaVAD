@@ -94,18 +94,31 @@
          <ClosedNode>/VegaVAD_main D:|Library_Projects_FPGA|VegaVAD|VegaVAD_main.v/get_features - get_features</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>VegaVAD_main_tb - behavior (D:/Library_Projects_FPGA/VegaVAD/VegaVAD_main_tb.vhd)</SelectedItem>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000245000000020000000000000000000000000200000064ffffffff000000810000000300000002000002450000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000244000000020000000000000000000000000200000064ffffffff000000810000000300000002000002440000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>VegaVAD_main_tb - behavior (D:/Library_Projects_FPGA/VegaVAD/VegaVAD_main_tb.vhd)</CurrentItem>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem/>
@@ -115,19 +128,6 @@
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e30000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
-   </ItemView>
-   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e30000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>

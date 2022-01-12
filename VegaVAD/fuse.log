@@ -1,4 +1,4 @@
-Running: D:\Program\Xilinx\14.7\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Library_Projects_FPGA/VegaVAD/VegaVAD_main_tb_isim_beh.exe -prj D:/Library_Projects_FPGA/VegaVAD/VegaVAD_main_tb_beh.prj work.VegaVAD_main_tb work.glbl 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Library_Projects_FPGA/VegaVAD/VegaVAD_main_tb_isim_beh.exe" -prj "D:/Library_Projects_FPGA/VegaVAD/VegaVAD_main_tb_beh.prj" "work.VegaVAD_main_tb" "work.glbl" 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -119,5 +119,5 @@ Waiting for 7 sub-compilation(s) to finish...
 Compiled 9 VHDL Units
 Compiled 370 Verilog Units
 Built simulation executable D:/Library_Projects_FPGA/VegaVAD/VegaVAD_main_tb_isim_beh.exe
-Fuse Memory Usage: 173068 KB
-Fuse CPU Usage: 5952 ms
+Fuse Memory Usage: 172612 KB
+Fuse CPU Usage: 5593 ms

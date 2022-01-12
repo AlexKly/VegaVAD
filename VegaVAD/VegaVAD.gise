@@ -32,7 +32,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="VegaVAD_main.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="VegaVAD_main_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="VegaVAD_main_summary.html"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="VegaVAD_main_tb_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="VegaVAD_main_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="VegaVAD_main_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="VegaVAD_main_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="VegaVAD_main_xst.xrpt"/>
@@ -43,7 +43,6 @@
     <file xil_pn:fileType="FILE_USERDOC" xil_pn:name="ipcore_dir/floating_point_mult_readme.txt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_ADC_PCM1808_controller_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
@@ -55,7 +54,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1641822998" xil_pn:in_ck="-637230017146573549" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1641822998">
+    <transform xil_pn:end_ts="1641897230" xil_pn:in_ck="-637230017146573549" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1641897230">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -84,6 +83,10 @@
     <transform xil_pn:end_ts="1641822998" xil_pn:in_ck="-6874638650648685635" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3178132786082908526" xil_pn:start_ts="1641822998">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ipcore_dir/ClockManager.v"/>
       <outfile xil_pn:name="ipcore_dir/fft_block.ngc"/>
       <outfile xil_pn:name="ipcore_dir/fft_block.v"/>
@@ -100,7 +103,7 @@
       <outfile xil_pn:name="ipcore_dir/floating_point_square_root.ngc"/>
       <outfile xil_pn:name="ipcore_dir/floating_point_square_root.v"/>
     </transform>
-    <transform xil_pn:end_ts="1641822998" xil_pn:in_ck="-4429870842367626320" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1641822998">
+    <transform xil_pn:end_ts="1641897230" xil_pn:in_ck="-637230017146573549" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1641897230">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -115,22 +118,15 @@
       <outfile xil_pn:name="VegaVAD_main_tb.vhd"/>
       <outfile xil_pn:name="get_features.v"/>
       <outfile xil_pn:name="get_frames.vhd"/>
-      <outfile xil_pn:name="ipcore_dir/ClockManager.v"/>
-      <outfile xil_pn:name="ipcore_dir/fft_block.v"/>
-      <outfile xil_pn:name="ipcore_dir/fifo_play.v"/>
-      <outfile xil_pn:name="ipcore_dir/floating_point_add.v"/>
-      <outfile xil_pn:name="ipcore_dir/floating_point_div.v"/>
-      <outfile xil_pn:name="ipcore_dir/floating_point_int24_to_float32.v"/>
-      <outfile xil_pn:name="ipcore_dir/floating_point_mult.v"/>
-      <outfile xil_pn:name="ipcore_dir/floating_point_square_root.v"/>
       <outfile xil_pn:name="power_spectrum.v"/>
       <outfile xil_pn:name="tb_ADC_PCM1808_controller.vhd"/>
       <outfile xil_pn:name="windowing.v"/>
     </transform>
-    <transform xil_pn:end_ts="1641823014" xil_pn:in_ck="-4429870842367626320" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7993108863068159524" xil_pn:start_ts="1641822998">
+    <transform xil_pn:end_ts="1641897245" xil_pn:in_ck="-4429870842367626320" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7993108863068159524" xil_pn:start_ts="1641897230">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
@@ -139,18 +135,17 @@
       <outfile xil_pn:name="VegaVAD_main_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1641823015" xil_pn:in_ck="2814239591638949061" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-9053458976198117465" xil_pn:start_ts="1641823014">
+    <transform xil_pn:end_ts="1641897245" xil_pn:in_ck="2814239591638949061" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-9053458976198117465" xil_pn:start_ts="1641897245">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="VegaVAD_main_tb_isim_beh.wdb"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1640600745" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1640600745">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -210,6 +205,7 @@
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="VegaVAD_main.lso"/>
       <outfile xil_pn:name="VegaVAD_main.ngc"/>
       <outfile xil_pn:name="VegaVAD_main.ngr"/>
@@ -217,7 +213,6 @@
       <outfile xil_pn:name="VegaVAD_main.stx"/>
       <outfile xil_pn:name="VegaVAD_main.syr"/>
       <outfile xil_pn:name="VegaVAD_main.xst"/>
-      <outfile xil_pn:name="VegaVAD_main_tb_beh.prj"/>
       <outfile xil_pn:name="VegaVAD_main_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
