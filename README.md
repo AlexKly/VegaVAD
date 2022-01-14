@@ -17,10 +17,10 @@ Vega is a voice control system for home functions. Vega is the one of the main p
   - [ ] Developing a module of the ML model.
   - [ ] Developing a module for filtering to smooth out model answers.
   - [ ] Developing a module for indication the answers of model.
-- [ ] Test part
+- [ ] Test part:
   - [ ] Build and configure the kit.
   - [ ] Testing the work of the algorithm on real signals based on the kit.
-- [ ] Final part
+- [ ] Final part:
   - [ ] Summarize the results on the Habr, the GitHub and the Kaggle.
 
 GL HF!
