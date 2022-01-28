@@ -23,4 +23,20 @@ Vega is a voice control system for home functions. Vega is the one of the main p
 - [ ] Final part:
   - [ ] Summarize the results on the Habr, the GitHub and the Kaggle.
 
+## Data for train the model:
+The data for train the model I took from this competition on the Kaggle: [Data](https://www.kaggle.com/c/silero-audio-classifier/overview "Kaggle competition").
+In dataset you can find audio data divided into 3 classes: Voice, Noise and Music. You can union Noise and Music into signle class or build the model for recongition 3 classes.
+### Info about data:
+* 3 classes - voice, music, noise;
+* 30 GB of data in 3 classes, about 328k audio files;
+* All files are in .wav format, sampling rate is 16 kHz;
+* Approximately 30 GB of data is proposed, 10 GB per class;
+* All files have the same length - 3 seconds or 3 * 16 samples;
+* A very diverse selection of data sources and domains;
+* All samples are anonymized and stored in the on-disk DB with their hashes as paths;
+
+### Folder structure:
+
+
+
 GL HF!
