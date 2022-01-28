@@ -36,6 +36,7 @@ In dataset you can find audio data divided into 3 classes: Voice, Noise and Musi
 * All samples are anonymized and stored in the on-disk DB with their hashes as paths;
 
 ### Folder structure:
+![](https://github.com/AlexKly/VegaVAD/blob/master/Docs/Dataset_folder_structure.jpg)
 
 
 
