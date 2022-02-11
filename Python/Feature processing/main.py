@@ -1,63 +1,75 @@
 import config
-from config import os, np, pd, tqdm
-import preprocessing_data
+from config import np, pd, tqdm
+from config import DATASET_TRAIN_SIZE, DATASET_VALID_SIZE, HEAD_DIR, FILE_TRAIN_INFO, FILE_TEST_INFO, OUTPUT_NAME_TRAIN, OUTPUT_NAME_TEST, CSV_FORMAT
+from processing_data import extractFeaturesTimeSeries, extractFeaturesImages
+
+
+def wrapperMain() -> None:
+    num_train_cycles = int(len(pd.read_csv(HEAD_DIR + FILE_TRAIN_INFO)) / DATASET_TRAIN_SIZE)
+    num_test_cycles = int(len(pd.read_csv(HEAD_DIR + FILE_TEST_INFO)) / DATASET_VALID_SIZE)
+
+    for i_train in tqdm(range(num_train_cycles)):
+        main(ind=i_train,
+             num_files=DATASET_TRAIN_SIZE,
+             filename_info=FILE_TRAIN_INFO,
+             filename_output=OUTPUT_NAME_TRAIN,
+             train_cycle=True)
+
+    for i_test in tqdm(range(num_test_cycles)):
+        main(ind=i_test,
+             num_files=DATASET_VALID_SIZE,
+             filename_info=FILE_TEST_INFO,
+             filename_output=OUTPUT_NAME_TEST,
+             train_cycle=False)
 
 
 # Main cycle:
-def main():
-    # Change working directory:
-    os.chdir('C:/Users/User/Desktop/')
-
+def main(ind: int, num_files: int, filename_info: str, filename_output: str, train_cycle: bool) -> None:
     # Load data:
-    train_info = pd.read_csv(config.HEAD_DIR + config.FILE_TRAIN_INFO)
-    train_info_waw_path = train_info['wav_path']
-    train_info_target = train_info['target']
-    train_info_waw_path, train_info_target = preprocessing_data.cuttingDataset(list_files=train_info_waw_path,
-                                                                               target_list=train_info_target,
-                                                                               dataset_size=config.DATASET_TRAIN_SIZE,
-                                                                               is_train=True)
-
-    test_info = config.pd.read_csv(config.HEAD_DIR + config.FILE_TEST_INFO)
-    test_info_wav_path = test_info['wav_path']
-    test_info_target = list(np.arange(0, len(test_info_wav_path), 1))
-    test_info_wav_path, test_info_target = preprocessing_data.cuttingDataset(list_files=test_info_wav_path,
-                                                                             target_list=test_info_target,
-                                                                             dataset_size=config.DATASET_VALID_SIZE,
-                                                                             is_train=False)
+    data_info = pd.read_csv(HEAD_DIR + filename_info)
+    data_info_wav_path = data_info['wav_path'][0 + (ind * num_files):num_files + (ind * num_files)]
+    if train_cycle:
+        data_info_target = data_info['target'][0 + (ind * num_files):num_files + (ind * num_files)]
+    else:
+        data_info_target = list(np.arange(0, len(data_info_wav_path), 1))
 
     # Processing files:
-    features_train_1 = preprocessing_data.extractFeaturesTimeSeries(info_wav_file=train_info_waw_path,
-                                                                    info_target=train_info_target)
-    features_train_2 = preprocessing_data.extractFeaturesImages(info_wav_file=train_info_waw_path,
-                                                                info_target=train_info_target)
-    features_test_1 = preprocessing_data.extractFeaturesTimeSeries(info_wav_file=test_info_wav_path,
-                                                                   info_target=test_info_target)
-    features_test_2 = preprocessing_data.extractFeaturesImages(info_wav_file=test_info_wav_path,
-                                                               info_target=test_info_target)
+    features_time_series = extractFeaturesTimeSeries(info_wav_file=data_info_wav_path,
+                                                     info_target=data_info_target,
+                                                     ind=ind,
+                                                     num_files=num_files)
+    features_images = extractFeaturesImages(info_wav_file=data_info_wav_path,
+                                            info_target=data_info_target,
+                                            ind=ind,
+                                            num_files=num_files)
 
     # Combine targets and features:
-    features_train_2_tmp = np.zeros((features_train_2.shape[0], features_train_2[0, 1].shape[0] + 1))
-    features_test_2_tmp = np.zeros((features_test_2.shape[0], features_test_2[0, 1].shape[0] + 1))
-    features_train_2_tmp[:, 0] = features_train_2[:, 0]
-    features_test_2_tmp[:, 0] = features_test_2[:, 0]
-    for i in tqdm(range(features_train_2.shape[0])):
-        features_train_2_tmp[i, 1:] = features_train_2[:, 1][i]
-    for i in tqdm(range(features_test_2.shape[0])):
-        features_test_2_tmp[i, 1:] = features_test_2[:, 1][i]
+    features_images_tmp = np.zeros((features_images.shape[0], features_images[0, 1].shape[0] + 1))
+    features_images_tmp[:, 0] = features_images[:, 0]
+    for i in range(features_images.shape[0]):
+        features_images_tmp[i, 1:] = features_images[:, 1][i]
 
     # Write data in CSV:
-    features_train_1 = config.pd.DataFrame(features_train_1)
-    features_test_1 = config.pd.DataFrame(features_test_1)
-    features_train_2 = config.pd.DataFrame(features_train_2_tmp)
-    features_test_2 = config.pd.DataFrame(features_test_2_tmp)
+    features_time_series = pd.DataFrame(features_time_series)
+    features_images = pd.DataFrame(features_images_tmp)
 
-    features_train_1.to_csv(config.HEAD_DIR + config.OUTPUT_NAME_TRAIN + str(1) + config.CSV_FORMAT, header=False, index=False)
-    features_test_1.to_csv(config.HEAD_DIR + config.OUTPUT_NAME_TEST + str(1) + config.CSV_FORMAT, header=False, index=False)
-    features_train_2.to_csv(config.HEAD_DIR + config.OUTPUT_NAME_TRAIN + str(2) + config.CSV_FORMAT, header=False, index=False)
-    features_test_2.to_csv(config.HEAD_DIR + config.OUTPUT_NAME_TEST + str(2) + config.CSV_FORMAT, header=False, index=False)
-
-    print('Done!')
+    if ind == 0:
+        features_time_series.to_csv(HEAD_DIR + filename_output + str(1) + CSV_FORMAT,
+                                    header=False,
+                                    index=False)
+        features_images.to_csv(HEAD_DIR + filename_output + str(2) + CSV_FORMAT,
+                               header=False,
+                               index=False)
+    else:
+        features_time_series.to_csv(HEAD_DIR + filename_output + str(1) + CSV_FORMAT,
+                                    mode='a',
+                                    header=False,
+                                    index=False)
+        features_images.to_csv(HEAD_DIR + filename_output + str(2) + CSV_FORMAT,
+                               mode='a',
+                               header=False,
+                               index=False)
 
 
 if __name__ == '__main__':
-    main()
+    wrapperMain()

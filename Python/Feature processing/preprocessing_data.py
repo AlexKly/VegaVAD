@@ -1,57 +1,15 @@
 import config
-from config import np, Counter, tqdm, wav, resampy, python_speech_features
-
-
-# Cutting dataset for training and test:
-def cuttingDataset(list_files: list, target_list: list, dataset_size: int, is_train: bool) -> (list, list):
-    current_size_label_0 = 0
-    current_size_label_1 = 0
-    current_size_label_2 = 0
-    ind_list_files = 0
-    continue_cutting = True
-    cuttung_list_files = list()
-    cutting_target_list = list()
-
-    while continue_cutting:
-
-        if is_train:
-            if target_list[ind_list_files] == 0 and current_size_label_0 < dataset_size:
-                cuttung_list_files.append(list_files[ind_list_files])
-                cutting_target_list.append(target_list[ind_list_files])
-                current_size_label_0 = current_size_label_0 + 1
-            elif target_list[ind_list_files] == 1 and current_size_label_1 < dataset_size:
-                cuttung_list_files.append(list_files[ind_list_files])
-                cutting_target_list.append(target_list[ind_list_files])
-                current_size_label_1 = current_size_label_1 + 1
-            elif target_list[ind_list_files] == 2 and current_size_label_2 < dataset_size:
-                cuttung_list_files.append(list_files[ind_list_files])
-                cutting_target_list.append(target_list[ind_list_files])
-                current_size_label_2 = current_size_label_2 + 1
-
-            ind_list_files = ind_list_files + 1
-
-            if current_size_label_0 + current_size_label_1 + current_size_label_2 == 3 * dataset_size:
-                continue_cutting = False
-        else:
-            cuttung_list_files.append(list_files[ind_list_files])
-            cutting_target_list.append(target_list[ind_list_files])
-
-            ind_list_files = ind_list_files + 1
-
-            if ind_list_files == dataset_size:
-                continue_cutting = False
-
-    return cuttung_list_files, cutting_target_list
+from config import np, Counter, wav, resampy, python_speech_features
 
 
 # Extraction features for each file like a time-series:
-def extractFeaturesTimeSeries(info_wav_file: list, info_target: list) -> np.ndarray:
+def extractFeaturesTimeSeries(info_wav_file: list, info_target: list, ind: int, num_files: int) -> np.ndarray:
     # Create massive for stacking features in first step:
     dataset_tmp = np.zeros((1, config.NFEATURES + 2))
 
-    for i in tqdm(range(len(info_wav_file))):
+    for i in range(len(info_wav_file)):
         # Load audio file and target:
-        (sample_rate, sig) = wav.read(config.HEAD_DIR + info_wav_file[i])
+        (sample_rate, sig) = wav.read(config.HEAD_DIR + info_wav_file[i + (ind * num_files)])
         sig = resampy.resample(x=sig, sr_orig=sample_rate, sr_new=config.SAMPLE_RATE)
 
         # Extract features:
@@ -74,7 +32,7 @@ def extractFeaturesTimeSeries(info_wav_file: list, info_target: list) -> np.ndar
         features = np.hstack((feature_logenergy.reshape(feature_logenergy.shape[0], 1), features_logfbank))
 
         # Create array of targets:
-        target = info_target[i]
+        target = info_target[i + (ind * num_files)]
         markers = np.zeros(features.shape[0])
         markers[:] = target
 
@@ -88,12 +46,12 @@ def extractFeaturesTimeSeries(info_wav_file: list, info_target: list) -> np.ndar
 
 
 # Extraction features for each file like a images:
-def extractFeaturesImages(info_wav_file: list, info_target: list) -> np.ndarray:
+def extractFeaturesImages(info_wav_file: list, info_target: list, ind: int, num_files: int) -> np.ndarray:
     dataset = list()
 
-    for i in tqdm(range(len(info_wav_file))):
+    for i in range(len(info_wav_file)):
         # Load audio file and target:
-        (sample_rate, sig) = wav.read(config.HEAD_DIR + info_wav_file[i])
+        (sample_rate, sig) = wav.read(config.HEAD_DIR + info_wav_file[i + (ind * num_files)])
         sig = resampy.resample(x=sig, sr_orig=sample_rate, sr_new=config.SAMPLE_RATE)
 
         # Extract logfbank features:
@@ -108,7 +66,7 @@ def extractFeaturesImages(info_wav_file: list, info_target: list) -> np.ndarray:
                                                                  preemph=config.PREEMPHASIS_COEF)
 
         # Create array of targets:
-        target = info_target[i]
+        target = info_target[i + (ind * num_files)]
         markers = np.zeros(features_logfbank.shape[0])
         markers[:] = target
 
