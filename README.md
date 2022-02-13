@@ -64,7 +64,7 @@ Params for setting data processing:
 - **Window function** - the analysis window to apply to each frame. I use the [Hamming window](https://docs.scipy.org/doc/scipy-0.19.1/reference/generated/scipy.signal.hamming.html#:~:text=The%20Hamming%20window%20is%20a,an%20empty%20array%20is%20returned.).
 - **Points for FFT size** - the FFT size. I use 512 points.
 - **Mel filters size** - the number of filters in the filterbank. It's features number for the ML model. I use 32 mel filters.
-- **Image size** - number of the stacked layers of the features after Mel filter processing. I use 32 stacked layers for getting image 32x32 for the CNN-BiLSTM model.
+- **Image size** - number of the stacked layers of the features after Mel filter processing. I use 32 stacked layers for getting image 32x32 for the ***CNN-BiLSTM*** model.
 
 
 GL HF!
