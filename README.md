@@ -38,5 +38,10 @@ In dataset you can find audio data divided into 3 classes: Voice, Noise and Musi
 ### Folder structure:
 ![dataset struct](https://github.com/AlexKly/VegaVAD/blob/master/Docs/Dataset_folder_structure.jpg)
 
+## The processing wav files in to features:
+Pay attention to that final files size will be too big after processing. So you need to remember it because the size will be ~ 40 Gb each file (The total number files will be 4).
+In main.py you can define path for your dataset.
+You can change parameters in config.py for feature processing.
+
 
 GL HF!

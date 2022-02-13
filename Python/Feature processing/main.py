@@ -1,7 +1,10 @@
 import config
-from config import np, pd, tqdm
+from config import os, np, pd, tqdm
 from config import DATASET_TRAIN_SIZE, DATASET_VALID_SIZE, HEAD_DIR, FILE_TRAIN_INFO, FILE_TEST_INFO, OUTPUT_NAME_TRAIN, OUTPUT_NAME_TEST, CSV_FORMAT
-from processing_data import extractFeaturesTimeSeries, extractFeaturesImages
+from preprocessing_data import extractFeaturesTimeSeries, extractFeaturesImages
+
+# Change main dir for finding path to data dir:
+os.chdir('C:/Users/User/Desktop/VegaVAD project/')
 
 
 def wrapperMain() -> None:
@@ -37,11 +40,13 @@ def main(ind: int, num_files: int, filename_info: str, filename_output: str, tra
     features_time_series = extractFeaturesTimeSeries(info_wav_file=data_info_wav_path,
                                                      info_target=data_info_target,
                                                      ind=ind,
-                                                     num_files=num_files)
+                                                     num_files=num_files,
+                                                     train_cycle=train_cycle)
     features_images = extractFeaturesImages(info_wav_file=data_info_wav_path,
                                             info_target=data_info_target,
                                             ind=ind,
-                                            num_files=num_files)
+                                            num_files=num_files,
+                                            train_cycle=train_cycle)
 
     # Combine targets and features:
     features_images_tmp = np.zeros((features_images.shape[0], features_images[0, 1].shape[0] + 1))

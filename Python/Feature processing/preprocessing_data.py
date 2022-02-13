@@ -3,7 +3,7 @@ from config import np, Counter, wav, resampy, python_speech_features
 
 
 # Extraction features for each file like a time-series:
-def extractFeaturesTimeSeries(info_wav_file: list, info_target: list, ind: int, num_files: int) -> np.ndarray:
+def extractFeaturesTimeSeries(info_wav_file: list, info_target: list, ind: int, num_files: int, train_cycle: bool) -> np.ndarray:
     # Create massive for stacking features in first step:
     dataset_tmp = np.zeros((1, config.NFEATURES + 2))
 
@@ -32,7 +32,10 @@ def extractFeaturesTimeSeries(info_wav_file: list, info_target: list, ind: int, 
         features = np.hstack((feature_logenergy.reshape(feature_logenergy.shape[0], 1), features_logfbank))
 
         # Create array of targets:
-        target = info_target[i + (ind * num_files)]
+        if train_cycle:
+            target = info_target[i + (ind * num_files)]
+        else:
+            target = info_target[i]
         markers = np.zeros(features.shape[0])
         markers[:] = target
 
@@ -46,7 +49,7 @@ def extractFeaturesTimeSeries(info_wav_file: list, info_target: list, ind: int, 
 
 
 # Extraction features for each file like a images:
-def extractFeaturesImages(info_wav_file: list, info_target: list, ind: int, num_files: int) -> np.ndarray:
+def extractFeaturesImages(info_wav_file: list, info_target: list, ind: int, num_files: int, train_cycle: bool) -> np.ndarray:
     dataset = list()
 
     for i in range(len(info_wav_file)):
@@ -66,7 +69,10 @@ def extractFeaturesImages(info_wav_file: list, info_target: list, ind: int, num_
                                                                  preemph=config.PREEMPHASIS_COEF)
 
         # Create array of targets:
-        target = info_target[i + (ind * num_files)]
+        if train_cycle:
+            target = info_target[i + (ind * num_files)]
+        else:
+            target = info_target[i]
         markers = np.zeros(features_logfbank.shape[0])
         markers[:] = target
 
