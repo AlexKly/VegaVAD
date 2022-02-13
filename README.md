@@ -1,6 +1,15 @@
 # Vega VAD project
 Vega is a voice control system for home functions. Vega is the one of the main part of complex home control system called Lyra. In this repository is located project for realization that system on hardware device and bulding ML alghoritm for recognition a human voice.
 
+## Road map:
+- Preparation data for learning the ML model
+- Build ML system for voice detection
+- Realization on the FPGA audio capturing
+- Realization ML model on the FPGA
+
+## Details about project:
+<input here details>
+
 ## TO DO list:
 - [x]  Start preparation:
   - [x] Collection the wav files for a dataset.
@@ -39,9 +48,20 @@ In dataset you can find audio data divided into 3 classes: Voice, Noise and Musi
 ![dataset struct](https://github.com/AlexKly/VegaVAD/blob/master/Docs/Dataset_folder_structure.jpg)
 
 ## The processing wav files in to features:
-Pay attention to that final files size will be too big after processing. So you need to remember it because the size will be ~ 40 Gb each file (The total number files will be 4).
+Pay attention to that final files size will be too big after processing. **So you need to remember it because the size will be ~ 40 Gb each file (The total number files will be 4). And it will take a lot time for processing all audio data.**
 In main.py you can define path for your dataset.
 You can change parameters in config.py for feature processing.
+In preprocessing_data you can find function for extraction features for two approaches: ***BiLSTM*** and ***CNN-BiLSTM***
+
+Params for setting data processing:
+- Sample rate - 
+- Pre
+- Frame length
+- Frame step
+- Window function
+- Points for FFT size:
+- Mel filters size:
+- Image size:
 
 
 GL HF!
