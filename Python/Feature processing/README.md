@@ -1,3 +1,3 @@
-# VegaVAD
-
-System of voice control
+# Feature preprocessing
+TO DO:
+1. Add any description
